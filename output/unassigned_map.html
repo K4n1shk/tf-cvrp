@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unassigned Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f8fafc; }
+    .layout { display: grid; grid-template-columns: minmax(0, 1fr) 340px; height: 100vh; }
+    #map { height: 100vh; width: 100%; }
+    .panel { overflow: auto; background: white; border-left: 1px solid #d0d7de; padding: 16px; }
+    .legend-item { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; font-size: 13px; }
+    .swatch { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+    .map-label { background: rgba(255,255,255,0.92); border: 1px solid #cbd5e1; color: #111827; padding: 1px 4px; border-radius: 4px; font-size: 11px; white-space: nowrap; }
+    .leaflet-tile-pane { filter: grayscale(100%) contrast(115%) brightness(88%); }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <div id="map"></div>
+    <div class="panel">
+      <h2>Unassigned Stores</h2>
+      <div><strong>Count:</strong> 0</div>
+      <div><strong>Depot:</strong> 13.019211191241423, 77.54907673395722</div>
+      <h3>Area Colors</h3>
+      
+    </div>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    const depot = {"lat": 13.019211191241423, "lon": 77.54907673395722};
+    const unassigned = [];
+    const areaOverlays = [];
+    const map = L.map('map');
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    const bounds = [[depot.lat, depot.lon]];
+    L.marker([depot.lat, depot.lon]).bindPopup('Common depot / start point').addTo(map);
+
+    areaOverlays.forEach((area) => {
+      const polygonLatLngs = area.polygon.map((point) => [point.lat, point.lon]);
+      polygonLatLngs.forEach((latlng) => bounds.push(latlng));
+      L.polygon(polygonLatLngs, {
+        color: area.color,
+        fillColor: area.color,
+        fillOpacity: 0.12,
+        opacity: 0.9,
+        weight: 2.5
+      }).bindPopup(`Area ${area.label}<br>Unassigned jobs: ${area.job_count}`).addTo(map);
+    });
+
+    const unassignedLabelLayer = L.layerGroup();
+    unassigned.forEach((job) => {
+      const latlng = [job.lat, job.lon];
+      bounds.push(latlng);
+      const marker = L.circleMarker(latlng, {
+        radius: 7,
+        color: '#991b1b',
+        fillColor: job.area_color,
+        fillOpacity: 0.95,
+        weight: 2
+      });
+      marker.bindPopup(
+        `<strong>${job.name}</strong><br>` +
+        `Area: ${job.area_label}<br>` +
+        `Weight: ${job.weight} kg<br>` +
+        `Priority: ${job.priority ?? 'NA'}<br>` +
+        `Drop penalty: ${job.drop_penalty}`
+      );
+      marker.addTo(map);
+      const labelIcon = L.divIcon({
+        className: 'map-label',
+        html: `<span style="color:${job.area_color};font-weight:700">${job.area_label}</span> ${job.name}`,
+        iconSize: null
+      });
+      L.marker([job.lat, job.lon], {icon: labelIcon, interactive: false}).addTo(unassignedLabelLayer);
+    });
+
+    L.control.layers(null, {
+      "Unassigned labels": unassignedLabelLayer
+    }, {collapsed: false}).addTo(map);
+
+    map.fitBounds(bounds, {padding: [30, 30]});
+  </script>
+</body>
+</html>

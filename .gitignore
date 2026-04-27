@@ -46,7 +46,3 @@ Thumbs.db
 # Matplotlib and local runtime caches
 .mplconfig/
 
-# Large/temporary generated map artifacts
-*.png
-*.html
-
