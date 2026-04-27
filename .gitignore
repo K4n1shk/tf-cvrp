@@ -46,12 +46,6 @@ Thumbs.db
 # Matplotlib and local runtime caches
 .mplconfig/
 
-# Generated routing outputs
-output/
-output_*/
-plotted_from_csv/
-plotted_solution/
-
 # Large/temporary generated map artifacts
 *.png
 *.html
