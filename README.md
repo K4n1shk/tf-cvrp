@@ -19,9 +19,9 @@ python3 -m tfopt.cli
 
 Useful outputs:
 
-- `output/routes_map.html`: interactive route map with route filters, route summaries, vehicle diagnostics, utilization summary, and underutilized debug report
+- `output/routes_map.html`: interactive route map with route filters, route summaries, vehicle diagnostics, utilization summary, underutilized debug report, and a collapsible/resizable sidebar
 - `output/optimized_routes.json`: machine-readable routes, vehicle diagnostics, and underutilized debug details
-- `output/preassignment_summary.json`: area ownership, candidate vehicles, territory map, and solver/rebalance flags
+- `output/preassignment_summary.json`: `redistributed_area_ids`, area ownership, candidate vehicles, territory map, and solver/rebalance flags
 - `output/optimized_routes.csv`: flat route stop list for spreadsheet review
 - `output/routes.png`: static route overview
 
@@ -29,6 +29,19 @@ Example with custom output directory:
 
 ```bash
 python3 preassign.py drop_points.csv --output-dir output
+```
+
+By default, the pipeline dissolves area code `1111` at runtime before territory
+assignment and routing. Each `1111` stop is reassigned to the area of its nearest
+existing non-`1111` stop, so the source CSV is not mutated and future input files
+can still contain `1111`.
+
+To dissolve a custom set of area codes, repeat `--redistribute-area-id` and include
+every code that should be dissolved. When any `--redistribute-area-id` flag is
+provided, that explicit list replaces the default `1111` list:
+
+```bash
+python3 preassign.py next_input.csv --redistribute-area-id 1111 --redistribute-area-id 9999
 ```
 
 This README explains the main routing pipeline in this repo:
@@ -52,7 +65,7 @@ The code used to live almost entirely in `preassign.py`. It has been split into 
 - `tfopt/io.py`: CSV loading and JSON writing
 - `tfopt/fleet.py`: default fleet specs, vehicle creation, and `--vehicle-spec` parsing
 - `tfopt/geo.py`: haversine distance, road-cost approximation, and route-distance helpers
-- `tfopt/territory.py`: missing-area normalization, area ownership, candidate ranking, and territory maps
+- `tfopt/territory.py`: runtime area redistribution, missing-area normalization, area ownership, candidate ranking, and territory maps
 - `tfopt/matrices.py`: OR-Tools distance matrix builders
 - `tfopt/scoring.py`: job drop-penalty scoring
 - `tfopt/routing.py`: OR-Tools solve passes, repair pass, and merged route assembly
@@ -63,23 +76,24 @@ The detailed walkthrough below keeps the line-by-line explanation style, but the
 
 ## Project Purpose
 
-The project reads delivery jobs from `drop_points.csv`, assigns missing area IDs, builds a soft territory model for vehicles, solves an open-route vehicle routing problem with OR-Tools, rebalances nearby stops to improve utilization, and writes route artifacts such as JSON, CSV, PNG, and HTML.
+The project reads delivery jobs from `drop_points.csv`, dissolves configured problem area IDs such as `1111` at runtime, assigns missing area IDs, builds a soft territory model for vehicles, solves an open-route vehicle routing problem with OR-Tools, rebalances nearby stops to improve utilization, and writes route artifacts such as JSON, CSV, PNG, and HTML.
 
 At a high level, the pipeline is:
 
 ```mermaid
 flowchart TD
     A["CSV Input"] --> B["load_jobs()"]
-    B --> C["assign_missing_area_ids()"]
-    C --> D["summarize_areas()"]
-    D --> E["build_vehicles()"]
-    E --> F["assign_primary_areas()"]
-    F --> G["build_candidate_map()"]
-    F --> H["build_job_territory_map()"]
-    G --> I["solve_routes()"]
-    H --> I
-    I --> J["route_summary() + diagnostics"]
-    J --> K["rendering exports"]
+    B --> C["redistribute_area_ids()"]
+    C --> D["assign_missing_area_ids()"]
+    D --> E["summarize_areas()"]
+    E --> F["build_vehicles()"]
+    F --> G["assign_primary_areas()"]
+    G --> H["build_candidate_map()"]
+    G --> I["build_job_territory_map()"]
+    H --> J["solve_routes()"]
+    I --> J
+    J --> K["route_summary() + diagnostics"]
+    K --> L["rendering exports"]
 ```
 
 ## Main Files
@@ -98,14 +112,15 @@ The routing work now lives in `tfopt/`. `preassign.py` is only a small wrapper t
 The package does the real work:
 
 1. Load jobs from CSV.
-2. Normalize blank area IDs.
-3. Build fleet objects.
-4. Assign each area to a preferred vehicle.
-5. Build soft territory preferences.
-6. Solve routes with OR-Tools.
-7. Rebalance nearby stops on underutilized vehicles.
-8. Compact/resequence final routes.
-9. Export summaries, diagnostics, debug reports, and visual artifacts.
+2. Dissolve configured area IDs such as `1111` at runtime without editing the CSV.
+3. Normalize blank area IDs.
+4. Build fleet objects.
+5. Assign each area to a preferred vehicle.
+6. Build soft territory preferences.
+7. Solve routes with OR-Tools.
+8. Rebalance nearby stops on underutilized vehicles.
+9. Compact/resequence final routes.
+10. Export summaries, diagnostics, debug reports, and visual artifacts.
 
 ## `models.py` Line-by-Line Map
 
@@ -204,7 +219,7 @@ python3 preassign.py
 
 The docstring states the key contract: implementation lives in `tfopt`, while this wrapper keeps old commands and imports alive.
 
-### Lines 10-47: compatibility re-exports
+### Lines 7-45: compatibility re-exports
 
 These imports intentionally re-export common helpers from the new modules:
 
@@ -217,7 +232,7 @@ These imports intentionally re-export common helpers from the new modules:
 - `tfopt.routing`: solver passes
 - `tfopt.scoring`: drop penalty
 - `tfopt.summary`: route summaries
-- `tfopt.territory`: area ownership and territory maps
+- `tfopt.territory`: area redistribution, area ownership, and territory maps
 
 This is why older code like `from preassign import load_jobs` still works after the split.
 
@@ -358,17 +373,35 @@ flowchart LR
 
 ## `tfopt/territory.py`: Area Ownership And Soft Territories
 
-### Lines 10-59: `assign_missing_area_ids()`
+### Lines 11-48: `redistribute_area_ids()`
+
+Dissolves configured area IDs before the territory model is built.
+
+How it works:
+
+- lines 18-20: normalize the configured area IDs and return unchanged if none are provided
+- lines 22-28: find donor jobs whose area is not being dissolved
+- lines 30-48: rebuild only the dissolved-area jobs with the nearest donor job's area ID
+- lines 36-39: choose the nearest donor stop by haversine distance, not by area centroid
+- lines 40-46: use `dataclasses.replace()` so the loaded `Job` objects and source CSV remain untouched
+
+Why this matters:
+
+- `1111` can remain in source files and future input files
+- the overlapping/problem area does not become its own territory
+- downstream summaries, candidate maps, solver penalties, and exports see the reassigned runtime area IDs
+
+### Lines 51-100: `assign_missing_area_ids()`
 
 Repairs jobs that arrived without an area.
 
 How it works:
 
-- lines 14-21: split jobs into known-area and missing-area groups
-- lines 23-24: return unchanged if no repair is needed
-- lines 26-31: compute known-area centroids
-- lines 33-57: rebuild missing-area jobs with the nearest area centroid
-- lines 39-42: choose nearest centroid by haversine distance
+- lines 55-62: split jobs into known-area and missing-area groups
+- lines 64-65: return unchanged if no repair is needed
+- lines 67-72: compute known-area centroids
+- lines 74-99: rebuild missing-area jobs with the nearest area centroid
+- lines 80-82: choose nearest centroid by haversine distance
 
 Why this matters:
 
@@ -376,7 +409,7 @@ Why this matters:
 - area ownership assumes every job belongs to a territory
 - solver penalties depend on territory classes
 
-### Lines 62-79: `summarize_areas()`
+### Lines 103-120: `summarize_areas()`
 
 Groups jobs by `area_id` and creates one `AreaSummary` per area.
 
@@ -386,29 +419,29 @@ Each summary stores:
 - total weight
 - total job count
 
-### Lines 82-109: `assign_primary_areas()`
+### Lines 123-150: `assign_primary_areas()`
 
 Assigns each area to a preferred vehicle owner.
 
 Decision logic:
 
-- lines 91-95: process larger areas first by total weight and job count
-- lines 96-103: rank vehicles by fewest owned areas, depot distance, then larger capacity
-- lines 104-107: assign the chosen vehicle and increment ownership count
+- lines 132-136: process larger areas first by total weight and job count
+- lines 137-144: rank vehicles by fewest owned areas, depot distance, then larger capacity
+- lines 145-148: assign the chosen vehicle and increment ownership count
 
 This does not reserve capacity. It creates a soft territory preference.
 
-### Lines 112-124: `flexible_areas_for_job()`
+### Lines 153-165: `flexible_areas_for_job()`
 
 Finds other areas whose centroids are within `threshold_km` of a job.
 
 Those areas become spillover candidates. Farther areas are treated as unrelated.
 
-### Lines 127-134: `insertion_detour_km()`
+### Lines 168-175: `insertion_detour_km()`
 
 Estimates the distance from a vehicle’s current temporary location to a job. This is used only during candidate ranking, not as the final OR-Tools route objective.
 
-### Lines 137-167: `score_vehicle_for_job()`
+### Lines 178-208: `score_vehicle_for_job()`
 
 Computes the pre-solver score for assigning a job to a vehicle.
 
@@ -422,13 +455,13 @@ It combines:
 
 Lower score means a better candidate.
 
-### Lines 170-226: `build_candidate_map()`
+### Lines 211-267: `build_candidate_map()`
 
 Builds a ranked list of vehicles for each job.
 
-Important detail: `max_candidates` is deliberately ignored on line 183. The current solver uses the full fleet with soft territory penalties instead of hard candidate pruning. This map is still exported for diagnostics and explainability.
+Important detail: `max_candidates` is deliberately ignored on line 224. The current solver uses the full fleet with soft territory penalties instead of hard candidate pruning. This map is still exported for diagnostics and explainability.
 
-### Lines 229-257: `build_job_territory_map()`
+### Lines 270-298: `build_job_territory_map()`
 
 Builds the main territory explanation object for every job:
 
@@ -438,7 +471,7 @@ Builds the main territory explanation object for every job:
 
 This structure is used both by the solver penalty map and by route compaction.
 
-### Lines 260-280: `build_vehicle_penalty_map()`
+### Lines 301-321: `build_vehicle_penalty_map()`
 
 Converts territory classes into integer costs used by the OR-Tools objective:
 
@@ -772,7 +805,7 @@ It includes:
 
 `cli.py` is intentionally the orchestration layer. It imports rendering, fleet setup, I/O, postprocess helpers, solver entry point, scoring, summaries, and territory-building functions.
 
-### Lines 23-83: `build_parser()`
+### Lines 24-93: `build_parser()`
 
 Defines CLI options:
 
@@ -787,32 +820,34 @@ Defines CLI options:
 - candidate vehicle count
 - solver time limit
 - custom vehicle specs
+- area IDs to dissolve before routing with `--redistribute-area-id`
 
-### Lines 86-147: pipeline setup and route solving
+### Lines 96-165: pipeline setup and route solving
 
 The first part of `main()`:
 
-- lines 88-91: parse args and create output directory
-- line 93: build depot tuple
-- lines 95-99: load jobs, repair areas, parse fleet, summarize areas
-- lines 100-105: assign area ownership
-- lines 106-117: build candidate map for diagnostics
-- lines 118-124: build job territory map
-- lines 126-133: create fresh routing fleet and vehicle limits
-- lines 135-146: call `solve_routes()`
-- line 147: final route resequencing before summaries/export
+- lines 98-101: parse args and create output directory
+- line 103: build depot tuple
+- lines 105-109: resolve the area IDs to dissolve, defaulting to `1111` when omitted
+- lines 111-117: load jobs, dissolve configured areas, repair blank areas, parse fleet, summarize areas
+- lines 118-123: assign area ownership
+- lines 124-135: build candidate map for diagnostics
+- lines 136-142: build job territory map
+- lines 144-151: create fresh routing fleet and vehicle limits
+- lines 153-164: call `solve_routes()`
+- line 165: final route resequencing before summaries/export
 
 The routing fleet is rebuilt fresh because candidate scoring uses mutable `Vehicle` state, while routing needs clean vehicle objects.
 
-### Lines 149-172: summary construction
+### Lines 167-191: summary construction
 
 Builds:
 
-- `preassignment_summary`: depot, fleet, territory, candidates, and solver diagnostics
+- `preassignment_summary`: depot, fleet, `redistributed_area_ids`, territory, candidates, and solver diagnostics
 - `optimized_summary`: route totals, unassigned jobs, vehicle diagnostics, route details
 - `underutilized_debug_report`: explanations for remaining underutilized routes
 
-### Lines 175-224: artifact exports
+### Lines 194-239: artifact exports
 
 Writes machine-readable files first:
 
@@ -829,7 +864,7 @@ Then attempts human-facing exports:
 
 Each rendering/export step catches exceptions and records warnings so one failed artifact does not kill the whole run.
 
-### Lines 226-285: console summary
+### Lines 241-304: console summary
 
 Prints:
 
@@ -845,7 +880,7 @@ Prints:
 - underutilized debug examples
 - output path
 
-### Lines 288-289: package entry point
+### Lines 307-308: package entry point
 
 Allows this command:
 
@@ -858,15 +893,16 @@ python3 -m tfopt.cli
 If you want to understand the pipeline quickly, remember it as:
 
 1. Turn CSV rows into `Job` objects.
-2. Make sure every job has an area.
-3. Give each area a preferred vehicle.
-4. Classify each vehicle for each job as primary, nearby, or unrelated.
-5. Build OR-Tools costs using distance plus territory penalties.
-6. Let OR-Tools pick routes and dropped jobs.
-7. Rebalance nearby stops without territory restrictions.
-8. Compact final assignments when a nearby/preferred move or swap reduces distance.
-9. Rebuild route order so paths remain visually sane.
-10. Export everything for inspection.
+2. Dissolve configured problem area IDs, defaulting to `1111`, by nearest non-dissolved stop.
+3. Make sure every job has an area.
+4. Give each area a preferred vehicle.
+5. Classify each vehicle for each job as primary, nearby, or unrelated.
+6. Build OR-Tools costs using distance plus territory penalties.
+7. Let OR-Tools pick routes and dropped jobs.
+8. Rebalance nearby stops without territory restrictions.
+9. Compact final assignments when a nearby/preferred move or swap reduces distance.
+10. Rebuild route order so paths remain visually sane.
+11. Export everything for inspection.
 
 ## Current Solver Philosophy
 
@@ -886,9 +922,10 @@ After rebalancing, the distance compaction layer looks for local moves/swaps tha
 
 ## Final Note
 
-If you keep only three ideas in your head while reading the code, make them these:
+If you keep only five ideas in your head while reading the code, make them these:
 
 - `models.py` defines the shapes
 - `tfopt/` defines the routing logic
 - `preassign.py` remains the compatibility command
+- source CSVs are read-only inputs; configured area IDs such as `1111` are dissolved in memory
 - the main solver objective is distance plus territory preference plus drop penalties, then rebalancing does local utilization cleanup

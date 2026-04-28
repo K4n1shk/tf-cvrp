@@ -16,6 +16,7 @@ from tfopt.territory import (
     assign_primary_areas,
     build_candidate_map,
     build_job_territory_map,
+    redistribute_area_ids,
     summarize_areas,
 )
 
@@ -80,6 +81,15 @@ def build_parser() -> argparse.ArgumentParser:
         default=[],
         help="Vehicle spec in capacity:count:max_stops format. Can be repeated.",
     )
+    parser.add_argument(
+        "--redistribute-area-id",
+        action="append",
+        default=None,
+        help=(
+            "Area id to dissolve into the nearest existing area before routing. "
+            "Defaults to 1111 when omitted. Can be repeated."
+        ),
+    )
     return parser
 
 
@@ -92,8 +102,16 @@ def main() -> None:
 
     depot = (args.depot_lat, args.depot_lon)
 
-    # Normalize blank-area jobs first so every downstream stage works with real areas.
-    jobs = assign_missing_area_ids(load_jobs(input_csv))
+    redistribute_area_ids_arg = [
+        area_id
+        for area_id in (args.redistribute_area_id or ["1111"])
+        if str(area_id).strip()
+    ]
+
+    # Normalize configured problem areas and blank-area jobs so every downstream stage
+    # works with routeable territories without mutating the source CSV.
+    jobs = redistribute_area_ids(load_jobs(input_csv), redistribute_area_ids_arg)
+    jobs = assign_missing_area_ids(jobs)
     vehicle_specs = parse_vehicle_specs(args.vehicle_spec) if args.vehicle_spec else VEHICLE_SPECS_DEFAULT
     fleet_source = "cli_or_default"
     area_summaries = summarize_areas(jobs)
@@ -154,6 +172,7 @@ def main() -> None:
         "total_job_weight_kg": round(sum(job.weight for job in jobs), 2),
         "total_fleet_capacity_kg": sum(vehicle.capacity for vehicle in vehicles_for_routing),
         "vehicle_specs": vehicle_specs,
+        "redistributed_area_ids": redistribute_area_ids_arg,
         "area_to_vehicle": area_to_vehicle,
         "candidate_vehicle_map": candidate_map,
         "job_territory_map": territory_map,

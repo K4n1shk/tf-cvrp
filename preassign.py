@@ -39,6 +39,7 @@ from tfopt.territory import (
     build_vehicle_penalty_map,
     flexible_areas_for_job,
     insertion_detour_km,
+    redistribute_area_ids,
     score_vehicle_for_job,
     summarize_areas,
 )

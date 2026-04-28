@@ -1,334 +1,334 @@
 {
   "vehicle_count_used": 25,
   "total_stops": 329,
-  "total_distance_km": 661.55,
+  "total_distance_km": 638.09,
   "unassigned_job_count": 0,
   "unassigned_total_weight_kg": 0,
   "vehicle_diagnostics": [
     {
       "vehicle_id": 1,
       "capacity_kg": 2400.0,
-      "used_capacity_kg": 2356.74,
-      "remaining_capacity_kg": 43.26,
-      "capacity_utilization_pct": 98.2,
+      "used_capacity_kg": 2369.94,
+      "remaining_capacity_kg": 30.06,
+      "capacity_utilization_pct": 98.7,
       "max_stops": 15,
-      "used_stops": 5,
-      "remaining_stops": 10,
-      "stop_utilization_pct": 33.3,
-      "distance_km": 13.3,
+      "used_stops": 7,
+      "remaining_stops": 8,
+      "stop_utilization_pct": 46.7,
+      "distance_km": 18.14,
       "utilization_status": "weight_bound"
     },
     {
       "vehicle_id": 2,
       "capacity_kg": 2200.0,
-      "used_capacity_kg": 2196.93,
-      "remaining_capacity_kg": 3.07,
-      "capacity_utilization_pct": 99.9,
+      "used_capacity_kg": 2157.02,
+      "remaining_capacity_kg": 42.98,
+      "capacity_utilization_pct": 98.0,
       "max_stops": 15,
-      "used_stops": 7,
-      "remaining_stops": 8,
-      "stop_utilization_pct": 46.7,
-      "distance_km": 14.5,
+      "used_stops": 8,
+      "remaining_stops": 7,
+      "stop_utilization_pct": 53.3,
+      "distance_km": 26.12,
       "utilization_status": "weight_bound"
     },
     {
       "vehicle_id": 3,
       "capacity_kg": 1300.0,
-      "used_capacity_kg": 1210.15,
-      "remaining_capacity_kg": 89.85,
-      "capacity_utilization_pct": 93.1,
+      "used_capacity_kg": 1284.0,
+      "remaining_capacity_kg": 16.0,
+      "capacity_utilization_pct": 98.8,
       "max_stops": 10,
-      "used_stops": 8,
-      "remaining_stops": 2,
-      "stop_utilization_pct": 80.0,
-      "distance_km": 14.74,
-      "utilization_status": "balanced"
+      "used_stops": 6,
+      "remaining_stops": 4,
+      "stop_utilization_pct": 60.0,
+      "distance_km": 15.35,
+      "utilization_status": "weight_bound"
     },
     {
       "vehicle_id": 4,
       "capacity_kg": 1300.0,
-      "used_capacity_kg": 1288.65,
-      "remaining_capacity_kg": 11.35,
-      "capacity_utilization_pct": 99.1,
+      "used_capacity_kg": 1275.0,
+      "remaining_capacity_kg": 25.0,
+      "capacity_utilization_pct": 98.1,
       "max_stops": 10,
-      "used_stops": 7,
-      "remaining_stops": 3,
-      "stop_utilization_pct": 70.0,
-      "distance_km": 22.1,
+      "used_stops": 2,
+      "remaining_stops": 8,
+      "stop_utilization_pct": 20.0,
+      "distance_km": 13.35,
       "utilization_status": "weight_bound"
     },
     {
       "vehicle_id": 5,
       "capacity_kg": 2500.0,
-      "used_capacity_kg": 2488.6,
-      "remaining_capacity_kg": 11.4,
-      "capacity_utilization_pct": 99.5,
+      "used_capacity_kg": 2497.86,
+      "remaining_capacity_kg": 2.14,
+      "capacity_utilization_pct": 99.9,
       "max_stops": 18,
-      "used_stops": 6,
-      "remaining_stops": 12,
-      "stop_utilization_pct": 33.3,
-      "distance_km": 29.88,
+      "used_stops": 5,
+      "remaining_stops": 13,
+      "stop_utilization_pct": 27.8,
+      "distance_km": 15.35,
       "utilization_status": "weight_bound"
     },
     {
       "vehicle_id": 6,
       "capacity_kg": 2500.0,
-      "used_capacity_kg": 2449.88,
-      "remaining_capacity_kg": 50.12,
-      "capacity_utilization_pct": 98.0,
+      "used_capacity_kg": 2479.7,
+      "remaining_capacity_kg": 20.3,
+      "capacity_utilization_pct": 99.2,
       "max_stops": 18,
       "used_stops": 9,
       "remaining_stops": 9,
       "stop_utilization_pct": 50.0,
-      "distance_km": 16.25,
+      "distance_km": 22.2,
       "utilization_status": "weight_bound"
     },
     {
       "vehicle_id": 7,
       "capacity_kg": 2500.0,
-      "used_capacity_kg": 2483.4,
-      "remaining_capacity_kg": 16.6,
-      "capacity_utilization_pct": 99.3,
+      "used_capacity_kg": 2441.63,
+      "remaining_capacity_kg": 58.37,
+      "capacity_utilization_pct": 97.7,
       "max_stops": 18,
-      "used_stops": 7,
-      "remaining_stops": 11,
-      "stop_utilization_pct": 38.9,
-      "distance_km": 19.17,
+      "used_stops": 10,
+      "remaining_stops": 8,
+      "stop_utilization_pct": 55.6,
+      "distance_km": 16.92,
       "utilization_status": "weight_bound"
     },
     {
       "vehicle_id": 8,
       "capacity_kg": 2700.0,
-      "used_capacity_kg": 2620.48,
-      "remaining_capacity_kg": 79.52,
-      "capacity_utilization_pct": 97.1,
+      "used_capacity_kg": 2426.35,
+      "remaining_capacity_kg": 273.65,
+      "capacity_utilization_pct": 89.9,
       "max_stops": 20,
-      "used_stops": 12,
-      "remaining_stops": 8,
-      "stop_utilization_pct": 60.0,
-      "distance_km": 43.24,
-      "utilization_status": "weight_bound"
+      "used_stops": 17,
+      "remaining_stops": 3,
+      "stop_utilization_pct": 85.0,
+      "distance_km": 15.4,
+      "utilization_status": "balanced"
     },
     {
       "vehicle_id": 9,
       "capacity_kg": 2700.0,
-      "used_capacity_kg": 2638.35,
-      "remaining_capacity_kg": 61.65,
-      "capacity_utilization_pct": 97.7,
+      "used_capacity_kg": 2455.28,
+      "remaining_capacity_kg": 244.72,
+      "capacity_utilization_pct": 90.9,
       "max_stops": 20,
-      "used_stops": 16,
-      "remaining_stops": 4,
-      "stop_utilization_pct": 80.0,
-      "distance_km": 16.99,
+      "used_stops": 13,
+      "remaining_stops": 7,
+      "stop_utilization_pct": 65.0,
+      "distance_km": 43.25,
       "utilization_status": "balanced"
     },
     {
       "vehicle_id": 10,
       "capacity_kg": 2700.0,
-      "used_capacity_kg": 2656.76,
-      "remaining_capacity_kg": 43.24,
-      "capacity_utilization_pct": 98.4,
+      "used_capacity_kg": 2662.07,
+      "remaining_capacity_kg": 37.93,
+      "capacity_utilization_pct": 98.6,
       "max_stops": 20,
-      "used_stops": 17,
-      "remaining_stops": 3,
-      "stop_utilization_pct": 85.0,
-      "distance_km": 36.59,
-      "utilization_status": "balanced"
+      "used_stops": 14,
+      "remaining_stops": 6,
+      "stop_utilization_pct": 70.0,
+      "distance_km": 31.91,
+      "utilization_status": "weight_bound"
     },
     {
       "vehicle_id": 11,
       "capacity_kg": 2700.0,
-      "used_capacity_kg": 2668.35,
-      "remaining_capacity_kg": 31.65,
-      "capacity_utilization_pct": 98.8,
+      "used_capacity_kg": 2508.0,
+      "remaining_capacity_kg": 192.0,
+      "capacity_utilization_pct": 92.9,
       "max_stops": 20,
-      "used_stops": 10,
-      "remaining_stops": 10,
-      "stop_utilization_pct": 50.0,
-      "distance_km": 50.17,
-      "utilization_status": "weight_bound"
+      "used_stops": 8,
+      "remaining_stops": 12,
+      "stop_utilization_pct": 40.0,
+      "distance_km": 36.22,
+      "utilization_status": "balanced"
     },
     {
       "vehicle_id": 12,
       "capacity_kg": 3200.0,
-      "used_capacity_kg": 2765.03,
-      "remaining_capacity_kg": 434.97,
-      "capacity_utilization_pct": 86.4,
+      "used_capacity_kg": 3008.35,
+      "remaining_capacity_kg": 191.65,
+      "capacity_utilization_pct": 94.0,
       "max_stops": 25,
-      "used_stops": 11,
-      "remaining_stops": 14,
-      "stop_utilization_pct": 44.0,
-      "distance_km": 26.65,
+      "used_stops": 17,
+      "remaining_stops": 8,
+      "stop_utilization_pct": 68.0,
+      "distance_km": 27.77,
       "utilization_status": "balanced"
     },
     {
       "vehicle_id": 13,
       "capacity_kg": 3200.0,
-      "used_capacity_kg": 3194.48,
-      "remaining_capacity_kg": 5.52,
-      "capacity_utilization_pct": 99.8,
+      "used_capacity_kg": 2856.88,
+      "remaining_capacity_kg": 343.12,
+      "capacity_utilization_pct": 89.3,
       "max_stops": 25,
-      "used_stops": 16,
-      "remaining_stops": 9,
-      "stop_utilization_pct": 64.0,
-      "distance_km": 25.14,
-      "utilization_status": "weight_bound"
+      "used_stops": 13,
+      "remaining_stops": 12,
+      "stop_utilization_pct": 52.0,
+      "distance_km": 18.83,
+      "utilization_status": "balanced"
     },
     {
       "vehicle_id": 14,
       "capacity_kg": 3200.0,
-      "used_capacity_kg": 3085.22,
-      "remaining_capacity_kg": 114.78,
-      "capacity_utilization_pct": 96.4,
+      "used_capacity_kg": 3131.82,
+      "remaining_capacity_kg": 68.18,
+      "capacity_utilization_pct": 97.9,
       "max_stops": 25,
       "used_stops": 17,
       "remaining_stops": 8,
       "stop_utilization_pct": 68.0,
-      "distance_km": 47.18,
+      "distance_km": 46.89,
       "utilization_status": "weight_bound"
     },
     {
       "vehicle_id": 15,
       "capacity_kg": 3200.0,
-      "used_capacity_kg": 3049.44,
-      "remaining_capacity_kg": 150.56,
-      "capacity_utilization_pct": 95.3,
+      "used_capacity_kg": 3121.98,
+      "remaining_capacity_kg": 78.02,
+      "capacity_utilization_pct": 97.6,
       "max_stops": 25,
-      "used_stops": 16,
-      "remaining_stops": 9,
-      "stop_utilization_pct": 64.0,
-      "distance_km": 27.76,
+      "used_stops": 19,
+      "remaining_stops": 6,
+      "stop_utilization_pct": 76.0,
+      "distance_km": 28.84,
       "utilization_status": "weight_bound"
     },
     {
       "vehicle_id": 16,
       "capacity_kg": 3200.0,
-      "used_capacity_kg": 3194.75,
-      "remaining_capacity_kg": 5.25,
-      "capacity_utilization_pct": 99.8,
+      "used_capacity_kg": 3029.39,
+      "remaining_capacity_kg": 170.61,
+      "capacity_utilization_pct": 94.7,
       "max_stops": 25,
-      "used_stops": 18,
-      "remaining_stops": 7,
-      "stop_utilization_pct": 72.0,
-      "distance_km": 28.89,
-      "utilization_status": "weight_bound"
+      "used_stops": 12,
+      "remaining_stops": 13,
+      "stop_utilization_pct": 48.0,
+      "distance_km": 24.19,
+      "utilization_status": "balanced"
     },
     {
       "vehicle_id": 17,
       "capacity_kg": 3200.0,
-      "used_capacity_kg": 2813.52,
-      "remaining_capacity_kg": 386.48,
-      "capacity_utilization_pct": 87.9,
+      "used_capacity_kg": 2934.62,
+      "remaining_capacity_kg": 265.38,
+      "capacity_utilization_pct": 91.7,
       "max_stops": 25,
-      "used_stops": 21,
-      "remaining_stops": 4,
-      "stop_utilization_pct": 84.0,
-      "distance_km": 16.66,
+      "used_stops": 20,
+      "remaining_stops": 5,
+      "stop_utilization_pct": 80.0,
+      "distance_km": 18.08,
       "utilization_status": "balanced"
     },
     {
       "vehicle_id": 18,
       "capacity_kg": 3200.0,
-      "used_capacity_kg": 2778.8,
-      "remaining_capacity_kg": 421.2,
-      "capacity_utilization_pct": 86.8,
+      "used_capacity_kg": 3090.77,
+      "remaining_capacity_kg": 109.23,
+      "capacity_utilization_pct": 96.6,
       "max_stops": 25,
-      "used_stops": 18,
-      "remaining_stops": 7,
-      "stop_utilization_pct": 72.0,
-      "distance_km": 20.85,
-      "utilization_status": "balanced"
+      "used_stops": 16,
+      "remaining_stops": 9,
+      "stop_utilization_pct": 64.0,
+      "distance_km": 25.15,
+      "utilization_status": "weight_bound"
     },
     {
       "vehicle_id": 19,
       "capacity_kg": 3000.0,
-      "used_capacity_kg": 2989.42,
-      "remaining_capacity_kg": 10.58,
-      "capacity_utilization_pct": 99.6,
+      "used_capacity_kg": 2627.3,
+      "remaining_capacity_kg": 372.7,
+      "capacity_utilization_pct": 87.6,
       "max_stops": 25,
       "used_stops": 17,
       "remaining_stops": 8,
       "stop_utilization_pct": 68.0,
-      "distance_km": 24.84,
-      "utilization_status": "weight_bound"
+      "distance_km": 20.74,
+      "utilization_status": "balanced"
     },
     {
       "vehicle_id": 20,
       "capacity_kg": 3000.0,
-      "used_capacity_kg": 2821.67,
-      "remaining_capacity_kg": 178.33,
-      "capacity_utilization_pct": 94.1,
+      "used_capacity_kg": 2890.87,
+      "remaining_capacity_kg": 109.13,
+      "capacity_utilization_pct": 96.4,
       "max_stops": 25,
-      "used_stops": 18,
-      "remaining_stops": 7,
-      "stop_utilization_pct": 72.0,
-      "distance_km": 32.51,
+      "used_stops": 23,
+      "remaining_stops": 2,
+      "stop_utilization_pct": 92.0,
+      "distance_km": 35.76,
       "utilization_status": "balanced"
     },
     {
       "vehicle_id": 21,
       "capacity_kg": 3000.0,
-      "used_capacity_kg": 2680.87,
-      "remaining_capacity_kg": 319.13,
-      "capacity_utilization_pct": 89.4,
+      "used_capacity_kg": 2885.5,
+      "remaining_capacity_kg": 114.5,
+      "capacity_utilization_pct": 96.2,
       "max_stops": 25,
-      "used_stops": 15,
-      "remaining_stops": 10,
-      "stop_utilization_pct": 60.0,
-      "distance_km": 27.08,
-      "utilization_status": "balanced"
+      "used_stops": 18,
+      "remaining_stops": 7,
+      "stop_utilization_pct": 72.0,
+      "distance_km": 34.37,
+      "utilization_status": "weight_bound"
     },
     {
       "vehicle_id": 22,
       "capacity_kg": 3000.0,
-      "used_capacity_kg": 2973.61,
-      "remaining_capacity_kg": 26.39,
-      "capacity_utilization_pct": 99.1,
+      "used_capacity_kg": 2929.61,
+      "remaining_capacity_kg": 70.39,
+      "capacity_utilization_pct": 97.7,
       "max_stops": 25,
-      "used_stops": 11,
-      "remaining_stops": 14,
-      "stop_utilization_pct": 44.0,
-      "distance_km": 31.42,
+      "used_stops": 10,
+      "remaining_stops": 15,
+      "stop_utilization_pct": 40.0,
+      "distance_km": 29.89,
       "utilization_status": "weight_bound"
     },
     {
       "vehicle_id": 23,
       "capacity_kg": 3000.0,
-      "used_capacity_kg": 2918.0,
-      "remaining_capacity_kg": 82.0,
-      "capacity_utilization_pct": 97.3,
+      "used_capacity_kg": 2942.0,
+      "remaining_capacity_kg": 58.0,
+      "capacity_utilization_pct": 98.1,
       "max_stops": 25,
-      "used_stops": 16,
-      "remaining_stops": 9,
-      "stop_utilization_pct": 64.0,
-      "distance_km": 20.99,
+      "used_stops": 15,
+      "remaining_stops": 10,
+      "stop_utilization_pct": 60.0,
+      "distance_km": 18.58,
       "utilization_status": "weight_bound"
     },
     {
       "vehicle_id": 24,
       "capacity_kg": 3000.0,
-      "used_capacity_kg": 2813.87,
-      "remaining_capacity_kg": 186.13,
-      "capacity_utilization_pct": 93.8,
+      "used_capacity_kg": 2782.43,
+      "remaining_capacity_kg": 217.57,
+      "capacity_utilization_pct": 92.7,
       "max_stops": 25,
-      "used_stops": 20,
-      "remaining_stops": 5,
-      "stop_utilization_pct": 80.0,
-      "distance_km": 31.84,
+      "used_stops": 21,
+      "remaining_stops": 4,
+      "stop_utilization_pct": 84.0,
+      "distance_km": 32.19,
       "utilization_status": "balanced"
     },
     {
       "vehicle_id": 25,
       "capacity_kg": 3000.0,
-      "used_capacity_kg": 2643.8,
-      "remaining_capacity_kg": 356.2,
-      "capacity_utilization_pct": 88.1,
+      "used_capacity_kg": 2992.4,
+      "remaining_capacity_kg": 7.6,
+      "capacity_utilization_pct": 99.7,
       "max_stops": 25,
-      "used_stops": 11,
-      "remaining_stops": 14,
-      "stop_utilization_pct": 44.0,
-      "distance_km": 22.81,
-      "utilization_status": "balanced"
+      "used_stops": 12,
+      "remaining_stops": 13,
+      "stop_utilization_pct": 48.0,
+      "distance_km": 22.6,
+      "utilization_status": "weight_bound"
     }
   ],
   "vehicle_diagnostic_summary": {
@@ -342,9 +342,9 @@
   "routes": [
     {
       "vehicle_id": 1,
-      "distance_km": 13.3,
-      "load_kg": 2356.74,
-      "stop_count": 5,
+      "distance_km": 18.14,
+      "load_kg": 2369.94,
+      "stop_count": 7,
       "stops": [
         {
           "sequence": 1,
@@ -357,117 +357,64 @@
         },
         {
           "sequence": 2,
-          "job_id": "10458",
-          "name": "veerabhadreshwara provision store",
+          "job_id": "5093",
+          "name": "S L V Store",
           "area_id": "5089",
-          "lat": 12.9955387,
-          "lon": 77.4978052,
-          "weight": 90.0
+          "lat": 13.0008531,
+          "lon": 77.5015212,
+          "weight": 180.9
         },
         {
           "sequence": 3,
-          "job_id": "5464",
-          "name": "Sri Krishna Provision Store",
-          "area_id": "5080",
-          "lat": 12.982892,
-          "lon": 77.4788096,
-          "weight": 56.0
+          "job_id": "10391",
+          "name": "sri veeranjaneya provision store",
+          "area_id": "5089",
+          "lat": 12.9980344,
+          "lon": 77.4958575,
+          "weight": 128.0
         },
         {
           "sequence": 4,
-          "job_id": "5281",
-          "name": "Mahalakshmi provision store",
+          "job_id": "5063",
+          "name": "Sri Nanjundeshwara traders",
           "area_id": "5080",
-          "lat": 12.9878176,
-          "lon": 77.4675202,
-          "weight": 2050.0
+          "lat": 12.9909429,
+          "lon": 77.4650765,
+          "weight": 314.0
         },
         {
           "sequence": 5,
-          "job_id": "5104",
-          "name": "Lakshmi devi Provision store",
+          "job_id": "6130",
+          "name": "Mahalakshmi Provision stores",
           "area_id": "5080",
-          "lat": 12.9894736,
-          "lon": 77.4603374,
-          "weight": 129.7
+          "lat": 12.9891123,
+          "lon": 77.4492243,
+          "weight": 740.0
+        },
+        {
+          "sequence": 6,
+          "job_id": "6498",
+          "name": "Devi provision store",
+          "area_id": "5080",
+          "lat": 12.978234,
+          "lon": 77.430962,
+          "weight": 676.0
+        },
+        {
+          "sequence": 7,
+          "job_id": "6497",
+          "name": "Padmavati provision store",
+          "area_id": "5080",
+          "lat": 12.974581,
+          "lon": 77.422102,
+          "weight": 300.0
         }
       ]
     },
     {
       "vehicle_id": 2,
-      "distance_km": 14.5,
-      "load_kg": 2196.93,
-      "stop_count": 7,
-      "stops": [
-        {
-          "sequence": 1,
-          "job_id": "10392",
-          "name": "Maruthi Meghana dose corner",
-          "area_id": "5089",
-          "lat": 12.9927882,
-          "lon": 77.5087377,
-          "weight": 312.0
-        },
-        {
-          "sequence": 2,
-          "job_id": "5391",
-          "name": "mangalam store",
-          "area_id": "5080",
-          "lat": 12.9880494,
-          "lon": 77.5047719,
-          "weight": 300.0
-        },
-        {
-          "sequence": 3,
-          "job_id": "5181",
-          "name": "sri raghavendra swamy provision store",
-          "area_id": "5078",
-          "lat": 12.9847886,
-          "lon": 77.5142549,
-          "weight": 424.0
-        },
-        {
-          "sequence": 4,
-          "job_id": "5436",
-          "name": "Shree bhairaveshwara rice traders",
-          "area_id": "5078",
-          "lat": 12.9685621,
-          "lon": 77.5023401,
-          "weight": 283.22999999999996
-        },
-        {
-          "sequence": 5,
-          "job_id": "5435",
-          "name": "shree Annapoorneshwari rice traders 2",
-          "area_id": "5078",
-          "lat": 12.9679398,
-          "lon": 77.5019798,
-          "weight": 224.0
-        },
-        {
-          "sequence": 6,
-          "job_id": "9881",
-          "name": "sri Nanjundeshwara provision store",
-          "area_id": "5078",
-          "lat": 12.9620422,
-          "lon": 77.5034958,
-          "weight": 308.0
-        },
-        {
-          "sequence": 7,
-          "job_id": "10321",
-          "name": "devraj",
-          "area_id": "5078",
-          "lat": 12.9470689,
-          "lon": 77.4977737,
-          "weight": 345.7
-        }
-      ]
-    },
-    {
-      "vehicle_id": 3,
-      "distance_km": 14.74,
-      "load_kg": 1210.15,
+      "distance_km": 26.12,
+      "load_kg": 2157.02,
       "stop_count": 8,
       "stops": [
         {
@@ -490,198 +437,65 @@
         },
         {
           "sequence": 3,
-          "job_id": "6993",
-          "name": "Byraveshwara Rice Traders",
-          "area_id": "5086",
-          "lat": 13.0707972,
-          "lon": 77.565613,
-          "weight": 348.0
+          "job_id": "7426",
+          "name": "CHANDRA PROVISION STORE",
+          "area_id": "5084",
+          "lat": 13.1106062,
+          "lon": 77.5912914,
+          "weight": 234.0
         },
         {
           "sequence": 4,
-          "job_id": "10406",
-          "name": "MAHESHWARI RICE TRADERS",
+          "job_id": "9970",
+          "name": "sujatha tiffin center",
           "area_id": "5084",
-          "lat": 13.0760834,
-          "lon": 77.5574445,
-          "weight": 36.0
+          "lat": 13.109824003931601,
+          "lon": 77.59156465530396,
+          "weight": 82.0
         },
         {
           "sequence": 5,
-          "job_id": "9298",
-          "name": "N P STORE",
-          "area_id": "5086",
-          "lat": 13.0822025,
-          "lon": 77.5467204,
-          "weight": 55.0
+          "job_id": "7743",
+          "name": "Sri Ganesh provision store",
+          "area_id": "5076",
+          "lat": 13.0931983,
+          "lon": 77.6010384,
+          "weight": 100.0
         },
         {
           "sequence": 6,
-          "job_id": "7814",
-          "name": "SRI RAGAVENDRA IYENGAR CAKE HOUSE",
-          "area_id": "5084",
-          "lat": 13.0936755,
-          "lon": 77.5500803,
-          "weight": 29.619999999999997
+          "job_id": "10260",
+          "name": "Sri Ranganatha Provision Store",
+          "area_id": "5076",
+          "lat": 13.077185,
+          "lon": 77.6071092,
+          "weight": 161.0
         },
         {
           "sequence": 7,
-          "job_id": "6701",
-          "name": "Buy N Save",
-          "area_id": "5084",
-          "lat": 13.093337,
-          "lon": 77.547433,
-          "weight": 36.9
+          "job_id": "8206",
+          "name": "JAI HANUMAN PROVISION STORES",
+          "area_id": "5076",
+          "lat": 13.0831292,
+          "lon": 77.6184133,
+          "weight": 368.0
         },
         {
           "sequence": 8,
-          "job_id": "6709",
-          "name": "CHAYAPUTHARA GENERAL STORE",
-          "area_id": "5084",
-          "lat": 13.097639,
-          "lon": 77.54295,
-          "weight": 38.61
+          "job_id": "9703",
+          "name": "LAKSHMI PROVISION STORE",
+          "area_id": "5076",
+          "lat": 13.077562,
+          "lon": 77.6532573,
+          "weight": 546.0
         }
       ]
     },
     {
-      "vehicle_id": 4,
-      "distance_km": 22.1,
-      "load_kg": 1288.65,
-      "stop_count": 7,
-      "stops": [
-        {
-          "sequence": 1,
-          "job_id": "10903",
-          "name": "Sri Ayyappa General Stores",
-          "area_id": "5087",
-          "lat": 12.9571058,
-          "lon": 77.5902234,
-          "weight": 340.0
-        },
-        {
-          "sequence": 2,
-          "job_id": "10710",
-          "name": "AB Traders",
-          "area_id": "5087",
-          "lat": 12.9498762,
-          "lon": 77.6008124,
-          "weight": 172.0
-        },
-        {
-          "sequence": 3,
-          "job_id": "10611",
-          "name": "Jai Hanuman Rice Corner",
-          "area_id": "5087",
-          "lat": 12.9429843,
-          "lon": 77.5997561,
-          "weight": 356.0
-        },
-        {
-          "sequence": 4,
-          "job_id": "9352",
-          "name": "m r departmental Store",
-          "area_id": "5087",
-          "lat": 12.9343996,
-          "lon": 77.5926522,
-          "weight": 168.15
-        },
-        {
-          "sequence": 5,
-          "job_id": "9332",
-          "name": "BALAJI RICE CORNER",
-          "area_id": "5087",
-          "lat": 12.9313528,
-          "lon": 77.5725474,
-          "weight": 24.5
-        },
-        {
-          "sequence": 6,
-          "job_id": "9490",
-          "name": "fazal store",
-          "area_id": "5082",
-          "lat": 12.9181573,
-          "lon": 77.5884042,
-          "weight": 78.0
-        },
-        {
-          "sequence": 7,
-          "job_id": "10788",
-          "name": "SOUBHAGYA STORE",
-          "area_id": "5082",
-          "lat": 12.9041912,
-          "lon": 77.5786627,
-          "weight": 150.0
-        }
-      ]
-    },
-    {
-      "vehicle_id": 5,
-      "distance_km": 29.88,
-      "load_kg": 2488.6,
+      "vehicle_id": 3,
+      "distance_km": 15.35,
+      "load_kg": 1284.0,
       "stop_count": 6,
-      "stops": [
-        {
-          "sequence": 1,
-          "job_id": "7544",
-          "name": "Nandini Stores",
-          "area_id": "5081",
-          "lat": 12.989519366432251,
-          "lon": 77.56086811423302,
-          "weight": 342.0
-        },
-        {
-          "sequence": 2,
-          "job_id": "7514",
-          "name": "Asharaf / M M Provision Store",
-          "area_id": "5081",
-          "lat": 12.9844791,
-          "lon": 77.5618228,
-          "weight": 218.0
-        },
-        {
-          "sequence": 3,
-          "job_id": "7363",
-          "name": "H M S GENERAL STORE",
-          "area_id": "5087",
-          "lat": 12.9651251,
-          "lon": 77.565533,
-          "weight": 151.0
-        },
-        {
-          "sequence": 4,
-          "job_id": "9675",
-          "name": "mataji stor",
-          "area_id": "5142",
-          "lat": 12.8598549,
-          "lon": 77.5632177,
-          "weight": 546.9
-        },
-        {
-          "sequence": 5,
-          "job_id": "9947",
-          "name": "Venkateshwara tredars",
-          "area_id": "5142",
-          "lat": 12.869423470809936,
-          "lon": 77.54331674426794,
-          "weight": 250.70000000000002
-        },
-        {
-          "sequence": 6,
-          "job_id": "10134",
-          "name": "mayank provision store",
-          "area_id": "5142",
-          "lat": 12.8477177,
-          "lon": 77.5152785,
-          "weight": 980.0
-        }
-      ]
-    },
-    {
-      "vehicle_id": 6,
-      "distance_km": 16.25,
-      "load_kg": 2449.88,
-      "stop_count": 9,
       "stops": [
         {
           "sequence": 1,
@@ -691,6 +505,94 @@
           "lat": 13.0286308,
           "lon": 77.5069117,
           "weight": 238.0
+        },
+        {
+          "sequence": 2,
+          "job_id": "6576",
+          "name": "Revannasiddeshwara provision store",
+          "area_id": "5083",
+          "lat": 13.040315,
+          "lon": 77.504731,
+          "weight": 182.0
+        },
+        {
+          "sequence": 3,
+          "job_id": "5611",
+          "name": "N.T stores",
+          "area_id": "5075",
+          "lat": 13.0415232,
+          "lon": 77.5155216,
+          "weight": 152.0
+        },
+        {
+          "sequence": 4,
+          "job_id": "7114",
+          "name": "Amber Hot Dum Biryani",
+          "area_id": "5075",
+          "lat": 13.07178854973366,
+          "lon": 77.51111313700676,
+          "weight": 160.0
+        },
+        {
+          "sequence": 5,
+          "job_id": "6274",
+          "name": "rajlaxmi supar markeat",
+          "area_id": "5075",
+          "lat": 13.0751357,
+          "lon": 77.5242397,
+          "weight": 352.0
+        },
+        {
+          "sequence": 6,
+          "job_id": "6513",
+          "name": "srinivas traders",
+          "area_id": "5075",
+          "lat": 13.071579,
+          "lon": 77.525762,
+          "weight": 200.0
+        }
+      ]
+    },
+    {
+      "vehicle_id": 4,
+      "distance_km": 13.35,
+      "load_kg": 1275.0,
+      "stop_count": 2,
+      "stops": [
+        {
+          "sequence": 1,
+          "job_id": "6447",
+          "name": "AMBIKA PROVISION STORE",
+          "area_id": "5080",
+          "lat": 12.99923,
+          "lon": 77.470841,
+          "weight": 133.0
+        },
+        {
+          "sequence": 2,
+          "job_id": "6330",
+          "name": "Krishna Provision Store",
+          "area_id": "5080",
+          "lat": 12.9971982,
+          "lon": 77.4516165,
+          "weight": 1142.0
+        }
+      ]
+    },
+    {
+      "vehicle_id": 5,
+      "distance_km": 15.35,
+      "load_kg": 2497.86,
+      "stop_count": 5,
+      "stops": [
+        {
+          "sequence": 1,
+          "job_id": "8052",
+          "name": "Kalpavruksha Rice trader",
+          "area_id": "5083",
+          "lat": 13.027899026434142,
+          "lon": 77.49208487570286,
+          "weight": 70.0
         },
         {
           "sequence": 2,
@@ -721,300 +623,23 @@
         },
         {
           "sequence": 5,
-          "job_id": "6447",
-          "name": "AMBIKA PROVISION STORE",
+          "job_id": "5281",
+          "name": "Mahalakshmi provision store",
           "area_id": "5080",
-          "lat": 12.99923,
-          "lon": 77.470841,
-          "weight": 133.0
-        },
-        {
-          "sequence": 6,
-          "job_id": "5313",
-          "name": "Sri Hemagiri Provision store",
-          "area_id": "5080",
-          "lat": 12.9898447,
-          "lon": 77.4590612,
-          "weight": 126.25000000000001
-        },
-        {
-          "sequence": 7,
-          "job_id": "5027",
-          "name": "SRINIVASA PROVISION STORE",
-          "area_id": "5080",
-          "lat": 12.9924433,
-          "lon": 77.4518814,
-          "weight": 350.14
-        },
-        {
-          "sequence": 8,
-          "job_id": "5060",
-          "name": "Durga Store",
-          "area_id": "5080",
-          "lat": 12.9962909,
-          "lon": 77.4521481,
-          "weight": 82.63
-        },
-        {
-          "sequence": 9,
-          "job_id": "6330",
-          "name": "Krishna Provision Store",
-          "area_id": "5080",
-          "lat": 12.9971982,
-          "lon": 77.4516165,
-          "weight": 1142.0
+          "lat": 12.9878176,
+          "lon": 77.4675202,
+          "weight": 2050.0
         }
       ]
     },
     {
-      "vehicle_id": 7,
-      "distance_km": 19.17,
-      "load_kg": 2483.4,
-      "stop_count": 7,
+      "vehicle_id": 6,
+      "distance_km": 22.2,
+      "load_kg": 2479.7,
+      "stop_count": 9,
       "stops": [
         {
           "sequence": 1,
-          "job_id": "7081",
-          "name": "Grocery world",
-          "area_id": "5078",
-          "lat": 12.9772843,
-          "lon": 77.4996562,
-          "weight": 106.0
-        },
-        {
-          "sequence": 2,
-          "job_id": "5151",
-          "name": "Srinivasa departmental store",
-          "area_id": "5078",
-          "lat": 12.971301,
-          "lon": 77.4967783,
-          "weight": 280.0
-        },
-        {
-          "sequence": 3,
-          "job_id": "6208",
-          "name": "Surupika Provision Store",
-          "area_id": "5078",
-          "lat": 12.9662357,
-          "lon": 77.489358,
-          "weight": 543.8
-        },
-        {
-          "sequence": 4,
-          "job_id": "5030",
-          "name": "Sri Ragavendra Swamy Provision  Store",
-          "area_id": "5078",
-          "lat": 12.9737483,
-          "lon": 77.48972,
-          "weight": 353.0
-        },
-        {
-          "sequence": 5,
-          "job_id": "5031",
-          "name": "Sri MS Rice corner",
-          "area_id": "5078",
-          "lat": 12.9742155,
-          "lon": 77.4888667,
-          "weight": 580.0
-        },
-        {
-          "sequence": 6,
-          "job_id": "8014",
-          "name": "Lakshmi Venkateshwara Provision store 3",
-          "area_id": "5080",
-          "lat": 12.9732207,
-          "lon": 77.4489434,
-          "weight": 520.0
-        },
-        {
-          "sequence": 7,
-          "job_id": "6481",
-          "name": "Sri Pooja provision store",
-          "area_id": "5080",
-          "lat": 12.966191,
-          "lon": 77.437138,
-          "weight": 100.60000000000001
-        }
-      ]
-    },
-    {
-      "vehicle_id": 8,
-      "distance_km": 43.24,
-      "load_kg": 2620.48,
-      "stop_count": 12,
-      "stops": [
-        {
-          "sequence": 1,
-          "job_id": "9841",
-          "name": "Sri vari green house fruit and vegetablesa& grocery",
-          "area_id": "5079",
-          "lat": 12.9134809,
-          "lon": 77.5057058,
-          "weight": 825.2
-        },
-        {
-          "sequence": 2,
-          "job_id": "9316",
-          "name": "Sri Byraveshwara Rice Traders",
-          "area_id": "5143",
-          "lat": 12.9106515,
-          "lon": 77.4864491,
-          "weight": 303.0
-        },
-        {
-          "sequence": 3,
-          "job_id": "8068",
-          "name": "P.M Provision store",
-          "area_id": "5143",
-          "lat": 12.910996510551078,
-          "lon": 77.48332612216473,
-          "weight": 120.0
-        },
-        {
-          "sequence": 4,
-          "job_id": "8269",
-          "name": "Happy Home Super Mart",
-          "area_id": "5143",
-          "lat": 12.900569745957673,
-          "lon": 77.48752914369106,
-          "weight": 90.0
-        },
-        {
-          "sequence": 5,
-          "job_id": "7744",
-          "name": "Sri Gangaparameshwari grandige and provision store",
-          "area_id": "5143",
-          "lat": 12.900181164507234,
-          "lon": 77.48781647533178,
-          "weight": 142.0
-        },
-        {
-          "sequence": 6,
-          "job_id": "9568",
-          "name": "Poorvika condiments & Provision Store",
-          "area_id": "5143",
-          "lat": 12.877884272146163,
-          "lon": 77.5166991725564,
-          "weight": 358.0
-        },
-        {
-          "sequence": 7,
-          "job_id": "10451",
-          "name": "Sri Venkateshwara provision stores",
-          "area_id": "5143",
-          "lat": 12.8698003,
-          "lon": 77.4798335,
-          "weight": 157.0
-        },
-        {
-          "sequence": 8,
-          "job_id": "9226",
-          "name": "V Mart",
-          "area_id": "5143",
-          "lat": 12.8747386,
-          "lon": 77.4793536,
-          "weight": 90.0
-        },
-        {
-          "sequence": 9,
-          "job_id": "9931",
-          "name": "MN Fazil Store",
-          "area_id": "5143",
-          "lat": 12.892317244362323,
-          "lon": 77.4579755589366,
-          "weight": 260.0
-        },
-        {
-          "sequence": 10,
-          "job_id": "9752",
-          "name": "Vandana provision store",
-          "area_id": "5143",
-          "lat": 12.8962062,
-          "lon": 77.4539424,
-          "weight": 92.08
-        },
-        {
-          "sequence": 11,
-          "job_id": "10893",
-          "name": "Nishmika Catering Service",
-          "area_id": "5143",
-          "lat": 12.911473964582527,
-          "lon": 77.44200501590967,
-          "weight": 53.2
-        },
-        {
-          "sequence": 12,
-          "job_id": "9972",
-          "name": "near by store",
-          "area_id": "5143",
-          "lat": 12.8732092,
-          "lon": 77.4352359,
-          "weight": 130.0
-        }
-      ]
-    },
-    {
-      "vehicle_id": 9,
-      "distance_km": 16.99,
-      "load_kg": 2638.35,
-      "stop_count": 16,
-      "stops": [
-        {
-          "sequence": 1,
-          "job_id": "9933",
-          "name": "BHUVANESHWARI Traders",
-          "area_id": "5081",
-          "lat": 12.975596,
-          "lon": 77.536949,
-          "weight": 116.0
-        },
-        {
-          "sequence": 2,
-          "job_id": "9612",
-          "name": "Sri nanjundeshwara rice traders",
-          "area_id": "5088",
-          "lat": 12.9764986,
-          "lon": 77.5236102,
-          "weight": 110.0
-        },
-        {
-          "sequence": 3,
-          "job_id": "6140",
-          "name": "Bharath Provision Store",
-          "area_id": "5088",
-          "lat": 12.9706738,
-          "lon": 77.523911,
-          "weight": 252.5
-        },
-        {
-          "sequence": 4,
-          "job_id": "6238",
-          "name": "Siddlingeshwara Provision Store",
-          "area_id": "5088",
-          "lat": 12.9674262,
-          "lon": 77.52385,
-          "weight": 120.0
-        },
-        {
-          "sequence": 5,
-          "job_id": "7133",
-          "name": "Sree Veerabhadreshwara Rice Corner",
-          "area_id": "5088",
-          "lat": 12.9618028,
-          "lon": 77.5210581,
-          "weight": 50.0
-        },
-        {
-          "sequence": 6,
-          "job_id": "6233",
-          "name": "BSVR PROVISION STORE",
-          "area_id": "5088",
-          "lat": 12.9584258,
-          "lon": 77.5165036,
-          "weight": 128.0
-        },
-        {
-          "sequence": 7,
           "job_id": "9111",
           "name": "KANARAM MATAJI PROVISION STORES",
           "area_id": "5079",
@@ -1023,486 +648,22 @@
           "weight": 520.0
         },
         {
-          "sequence": 8,
-          "job_id": "9375",
-          "name": "Amit store",
-          "area_id": "5088",
-          "lat": 12.949297122219571,
-          "lon": 77.52927169203758,
-          "weight": 105.0
-        },
-        {
-          "sequence": 9,
-          "job_id": "6546",
-          "name": "vijilakshmi provision store",
-          "area_id": "5088",
-          "lat": 12.957052,
-          "lon": 77.532434,
-          "weight": 142.0
-        },
-        {
-          "sequence": 10,
-          "job_id": "7229",
-          "name": "sri lakshmi vekateshwara rice traders",
-          "area_id": "5088",
-          "lat": 12.9568581,
-          "lon": 77.5330915,
-          "weight": 100.0
-        },
-        {
-          "sequence": 11,
-          "job_id": "6544",
-          "name": "mallu fruits and veg",
-          "area_id": "5088",
-          "lat": 12.956813,
-          "lon": 77.539994,
-          "weight": 128.0
-        },
-        {
-          "sequence": 12,
-          "job_id": "6557",
-          "name": "M B S Store",
-          "area_id": "1111",
-          "lat": 12.957228,
-          "lon": 77.541771,
-          "weight": 140.0
-        },
-        {
-          "sequence": 13,
-          "job_id": "6537",
-          "name": "Manjunateshwara provision store",
-          "area_id": "5088",
-          "lat": 12.958022,
-          "lon": 77.540962,
-          "weight": 34.85
-        },
-        {
-          "sequence": 14,
-          "job_id": "6526",
-          "name": "sangam ricecorner",
-          "area_id": "5088",
-          "lat": 12.958068,
-          "lon": 77.540896,
-          "weight": 312.0
-        },
-        {
-          "sequence": 15,
-          "job_id": "8848",
-          "name": "s k taredes store",
-          "area_id": "5087",
-          "lat": 12.9607833,
-          "lon": 77.5427972,
-          "weight": 120.0
-        },
-        {
-          "sequence": 16,
-          "job_id": "6800",
-          "name": "Bismillah store",
-          "area_id": "5087",
-          "lat": 12.961127,
-          "lon": 77.5426513,
-          "weight": 260.0
-        }
-      ]
-    },
-    {
-      "vehicle_id": 10,
-      "distance_km": 36.59,
-      "load_kg": 2656.76,
-      "stop_count": 17,
-      "stops": [
-        {
-          "sequence": 1,
-          "job_id": "6448",
-          "name": "sri lakshmi channakeshava traders",
-          "area_id": "5090",
-          "lat": 13.027704018541256,
-          "lon": 77.55711570382118,
-          "weight": 154.0
-        },
-        {
           "sequence": 2,
-          "job_id": "8102",
-          "name": "sri Ranganath Store",
-          "area_id": "5090",
-          "lat": 12.9957747,
-          "lon": 77.5769547,
-          "weight": 112.32
+          "job_id": "6970",
+          "name": "LITHIKSHA PROVISION STORE",
+          "area_id": "5079",
+          "lat": 12.9440696,
+          "lon": 77.5200348,
+          "weight": 320.0
         },
         {
           "sequence": 3,
-          "job_id": "8037",
-          "name": "new provision store",
-          "area_id": "5090",
-          "lat": 12.993593,
-          "lon": 77.5930732,
-          "weight": 87.6
-        },
-        {
-          "sequence": 4,
-          "job_id": "7731",
-          "name": "M M STORES",
-          "area_id": "5090",
-          "lat": 13.0184034,
-          "lon": 77.5879622,
-          "weight": 70.0
-        },
-        {
-          "sequence": 5,
-          "job_id": "8811",
-          "name": "sri ragavedra general store",
-          "area_id": "5090",
-          "lat": 13.031910536633426,
-          "lon": 77.60709296911955,
-          "weight": 300.0
-        },
-        {
-          "sequence": 6,
-          "job_id": "8395",
-          "name": "Welcome provision store",
-          "area_id": "5090",
-          "lat": 13.0384297,
-          "lon": 77.6022004,
-          "weight": 130.0
-        },
-        {
-          "sequence": 7,
-          "job_id": "8872",
-          "name": "sri Balaji rice traders",
-          "area_id": "5090",
-          "lat": 13.0376091,
-          "lon": 77.596684,
-          "weight": 100.0
-        },
-        {
-          "sequence": 8,
-          "job_id": "8078",
-          "name": "R. R. M. store",
-          "area_id": "5076",
-          "lat": 13.0662486,
-          "lon": 77.6009702,
-          "weight": 193.14
-        },
-        {
-          "sequence": 9,
-          "job_id": "10260",
-          "name": "Sri Ranganatha Provision Store",
-          "area_id": "5076",
-          "lat": 13.077185,
-          "lon": 77.6071092,
-          "weight": 161.0
-        },
-        {
-          "sequence": 10,
-          "job_id": "8206",
-          "name": "JAI HANUMAN PROVISION STORES",
-          "area_id": "5076",
-          "lat": 13.0831292,
-          "lon": 77.6184133,
-          "weight": 368.0
-        },
-        {
-          "sequence": 11,
-          "job_id": "8171",
-          "name": "BYRAVESHWARA TRADERS",
-          "area_id": "5076",
-          "lat": 13.0893955,
-          "lon": 77.6191701,
-          "weight": 182.0
-        },
-        {
-          "sequence": 12,
-          "job_id": "8082",
-          "name": "MAHADEV PROVISION STORE",
-          "area_id": "5076",
-          "lat": 13.098269,
-          "lon": 77.6261763,
-          "weight": 200.0
-        },
-        {
-          "sequence": 13,
-          "job_id": "10759",
-          "name": "sri annapoorna rice Traders",
-          "area_id": "5076",
-          "lat": 13.119656841831286,
-          "lon": 77.62836791574955,
-          "weight": 192.0
-        },
-        {
-          "sequence": 14,
-          "job_id": "8716",
-          "name": "sri sarveshwara Rice Traders",
-          "area_id": "5076",
-          "lat": 13.1169547,
-          "lon": 77.6254395,
-          "weight": 200.0
-        },
-        {
-          "sequence": 15,
-          "job_id": "7347",
-          "name": "kavyashree rice traders",
-          "area_id": "5084",
-          "lat": 13.1023908,
-          "lon": 77.5949147,
-          "weight": 54.9
-        },
-        {
-          "sequence": 16,
-          "job_id": "10819",
-          "name": "BRAHMA CHAITANYA STORES",
-          "area_id": "5084",
-          "lat": 13.1018141,
-          "lon": 77.5957036,
-          "weight": 51.8
-        },
-        {
-          "sequence": 17,
-          "job_id": "7743",
-          "name": "Sri Ganesh provision store",
-          "area_id": "5076",
-          "lat": 13.0931983,
-          "lon": 77.6010384,
-          "weight": 100.0
-        }
-      ]
-    },
-    {
-      "vehicle_id": 11,
-      "distance_km": 50.17,
-      "load_kg": 2668.35,
-      "stop_count": 10,
-      "stops": [
-        {
-          "sequence": 1,
-          "job_id": "6274",
-          "name": "rajlaxmi supar markeat",
-          "area_id": "5075",
-          "lat": 13.0751357,
-          "lon": 77.5242397,
-          "weight": 352.0
-        },
-        {
-          "sequence": 2,
-          "job_id": "7000",
-          "name": "Sree Kaveri Provision Store",
-          "area_id": "5075",
-          "lat": 13.089670895200975,
-          "lon": 77.50102635473013,
-          "weight": 332.0
-        },
-        {
-          "sequence": 3,
-          "job_id": "8387",
-          "name": "excellent provision store",
-          "area_id": "1111",
-          "lat": 13.1385638,
-          "lon": 77.4780646,
-          "weight": 103.0
-        },
-        {
-          "sequence": 4,
-          "job_id": "10738",
-          "name": "Shri Mahadev Super Bazar",
-          "area_id": "1111",
-          "lat": 13.1384152,
-          "lon": 77.4741277,
-          "weight": 120.0
-        },
-        {
-          "sequence": 5,
-          "job_id": "7816",
-          "name": "Lucky Super Mart",
-          "area_id": "5075",
-          "lat": 13.075458394797538,
-          "lon": 77.47355751693249,
-          "weight": 61.35
-        },
-        {
-          "sequence": 6,
-          "job_id": "6776",
-          "name": "Sri Basaweshra rice corner",
-          "area_id": "5075",
-          "lat": 13.065835753603483,
-          "lon": 77.50342190265656,
-          "weight": 400.0
-        },
-        {
-          "sequence": 7,
-          "job_id": "6711",
-          "name": "A M Store",
-          "area_id": "5083",
-          "lat": 13.052655941149709,
-          "lon": 77.49362614005804,
-          "weight": 208.0
-        },
-        {
-          "sequence": 8,
-          "job_id": "5999",
-          "name": "Ramdev Provision  Stores",
-          "area_id": "5089",
-          "lat": 13.0228992,
-          "lon": 77.4578275,
-          "weight": 260.0
-        },
-        {
-          "sequence": 9,
-          "job_id": "6498",
-          "name": "Devi provision store",
-          "area_id": "5080",
-          "lat": 12.978234,
-          "lon": 77.430962,
-          "weight": 676.0
-        },
-        {
-          "sequence": 10,
-          "job_id": "9078",
-          "name": "Ramdev provision Stores",
-          "area_id": "5080",
-          "lat": 12.9698885,
-          "lon": 77.4424083,
-          "weight": 156.0
-        }
-      ]
-    },
-    {
-      "vehicle_id": 12,
-      "distance_km": 26.65,
-      "load_kg": 2765.03,
-      "stop_count": 11,
-      "stops": [
-        {
-          "sequence": 1,
-          "job_id": "10561",
-          "name": "MR Hoskote Dum Biriyani",
-          "area_id": "5080",
-          "lat": 12.9845883,
-          "lon": 77.4863507,
-          "weight": 69.0
-        },
-        {
-          "sequence": 2,
-          "job_id": "5188",
-          "name": "Likitha Provision Store",
+          "job_id": "10321",
+          "name": "devraj",
           "area_id": "5078",
-          "lat": 12.9788055,
-          "lon": 77.4739377,
-          "weight": 150.10999999999996
-        },
-        {
-          "sequence": 3,
-          "job_id": "5063",
-          "name": "Sri Nanjundeshwara traders",
-          "area_id": "5080",
-          "lat": 12.9909429,
-          "lon": 77.4650765,
-          "weight": 314.0
-        },
-        {
-          "sequence": 4,
-          "job_id": "9522",
-          "name": "Hare Krishna provision store",
-          "area_id": "5080",
-          "lat": 12.9907776,
-          "lon": 77.4610099,
-          "weight": 315.0
-        },
-        {
-          "sequence": 5,
-          "job_id": "6130",
-          "name": "Mahalakshmi Provision stores",
-          "area_id": "5080",
-          "lat": 12.9891123,
-          "lon": 77.4492243,
-          "weight": 740.0
-        },
-        {
-          "sequence": 6,
-          "job_id": "8013",
-          "name": "Halli Masala",
-          "area_id": "5080",
-          "lat": 12.987246,
-          "lon": 77.4479156,
-          "weight": 408.25
-        },
-        {
-          "sequence": 7,
-          "job_id": "6499",
-          "name": "Mataji Rice Traders",
-          "area_id": "5080",
-          "lat": 12.983531,
-          "lon": 77.44352,
-          "weight": 138.60000000000002
-        },
-        {
-          "sequence": 8,
-          "job_id": "6497",
-          "name": "Padmavati provision store",
-          "area_id": "5080",
-          "lat": 12.974581,
-          "lon": 77.422102,
-          "weight": 300.0
-        },
-        {
-          "sequence": 9,
-          "job_id": "5332",
-          "name": "S.M Provision Store",
-          "area_id": "5080",
-          "lat": 12.9651652,
-          "lon": 77.4006177,
-          "weight": 111.95
-        },
-        {
-          "sequence": 10,
-          "job_id": "5317",
-          "name": "SKStores",
-          "area_id": "5080",
-          "lat": 12.9651562,
-          "lon": 77.4006735,
-          "weight": 195.0
-        },
-        {
-          "sequence": 11,
-          "job_id": "5404",
-          "name": "SRS provision  store",
-          "area_id": "1111",
-          "lat": 12.949799335903611,
-          "lon": 77.42359433323145,
-          "weight": 23.12
-        }
-      ]
-    },
-    {
-      "vehicle_id": 13,
-      "distance_km": 25.14,
-      "load_kg": 3194.48,
-      "stop_count": 16,
-      "stops": [
-        {
-          "sequence": 1,
-          "job_id": "6097",
-          "name": "Chikpet Donne Biriyani",
-          "area_id": "5078",
-          "lat": 12.9797393,
-          "lon": 77.5104579,
-          "weight": 117.75
-        },
-        {
-          "sequence": 2,
-          "job_id": "5770",
-          "name": "Lakshmi traders",
-          "area_id": "5078",
-          "lat": 12.9528886,
-          "lon": 77.4994129,
-          "weight": 104.0
-        },
-        {
-          "sequence": 3,
-          "job_id": "8122",
-          "name": "Green zone",
-          "area_id": "5078",
-          "lat": 12.9476824,
-          "lon": 77.4968326,
-          "weight": 79.9
+          "lat": 12.9470689,
+          "lon": 77.4977737,
+          "weight": 345.7
         },
         {
           "sequence": 4,
@@ -1515,24 +676,122 @@
         },
         {
           "sequence": 5,
-          "job_id": "9859",
-          "name": "Asha Hotel",
+          "job_id": "9147",
+          "name": "Indian rice traders",
           "area_id": "5078",
-          "lat": 12.950953737365788,
-          "lon": 77.48710568994284,
-          "weight": 288.0
+          "lat": 12.9385257,
+          "lon": 77.4772987,
+          "weight": 676.0
         },
         {
           "sequence": 6,
-          "job_id": "9604",
-          "name": "Raghavendra Traders",
+          "job_id": "5744",
+          "name": "Nanjundeshwara provision store",
           "area_id": "5078",
-          "lat": 12.9515664,
-          "lon": 77.4819691,
-          "weight": 82.0
+          "lat": 12.9377891,
+          "lon": 77.4811951,
+          "weight": 250.0
         },
         {
           "sequence": 7,
+          "job_id": "8686",
+          "name": "chinmay Bakery and sweets",
+          "area_id": "5078",
+          "lat": 12.9320447,
+          "lon": 77.4878552,
+          "weight": 90.0
+        },
+        {
+          "sequence": 8,
+          "job_id": "9051",
+          "name": "Siddganga store",
+          "area_id": "5079",
+          "lat": 12.9192464,
+          "lon": 77.490733,
+          "weight": 104.0
+        },
+        {
+          "sequence": 9,
+          "job_id": "10290",
+          "name": "ANU HOTEL",
+          "area_id": "5079",
+          "lat": 12.9166055,
+          "lon": 77.5003378,
+          "weight": 60.0
+        }
+      ]
+    },
+    {
+      "vehicle_id": 7,
+      "distance_km": 16.92,
+      "load_kg": 2441.63,
+      "stop_count": 10,
+      "stops": [
+        {
+          "sequence": 1,
+          "job_id": "10392",
+          "name": "Maruthi Meghana dose corner",
+          "area_id": "5089",
+          "lat": 12.9927882,
+          "lon": 77.5087377,
+          "weight": 312.0
+        },
+        {
+          "sequence": 2,
+          "job_id": "5391",
+          "name": "mangalam store",
+          "area_id": "5080",
+          "lat": 12.9880494,
+          "lon": 77.5047719,
+          "weight": 300.0
+        },
+        {
+          "sequence": 3,
+          "job_id": "5078",
+          "name": "SRI KEMPAMMADEVI RICE TRADERS",
+          "area_id": "5089",
+          "lat": 12.9973001,
+          "lon": 77.5007527,
+          "weight": 90.0
+        },
+        {
+          "sequence": 4,
+          "job_id": "10458",
+          "name": "veerabhadreshwara provision store",
+          "area_id": "5089",
+          "lat": 12.9955387,
+          "lon": 77.4978052,
+          "weight": 90.0
+        },
+        {
+          "sequence": 5,
+          "job_id": "5031",
+          "name": "Sri MS Rice corner",
+          "area_id": "5078",
+          "lat": 12.9742155,
+          "lon": 77.4888667,
+          "weight": 580.0
+        },
+        {
+          "sequence": 6,
+          "job_id": "5030",
+          "name": "Sri Ragavendra Swamy Provision  Store",
+          "area_id": "5078",
+          "lat": 12.9737483,
+          "lon": 77.48972,
+          "weight": 353.0
+        },
+        {
+          "sequence": 7,
+          "job_id": "6208",
+          "name": "Surupika Provision Store",
+          "area_id": "5078",
+          "lat": 12.9662357,
+          "lon": 77.489358,
+          "weight": 543.8
+        },
+        {
+          "sequence": 8,
           "job_id": "6343",
           "name": "Sunrise Provision Store",
           "area_id": "5078",
@@ -1541,7 +800,7 @@
           "weight": 40.0
         },
         {
-          "sequence": 8,
+          "sequence": 9,
           "job_id": "9344",
           "name": "J. R RAJANNA PROVISION STORE",
           "area_id": "5078",
@@ -1550,22 +809,772 @@
           "weight": 67.25999999999999
         },
         {
-          "sequence": 9,
+          "sequence": 10,
           "job_id": "7163",
           "name": "Sri Ramanjaneya provision store",
           "area_id": "5078",
           "lat": 12.9597699,
           "lon": 77.4670872,
           "weight": 65.57
+        }
+      ]
+    },
+    {
+      "vehicle_id": 8,
+      "distance_km": 15.4,
+      "load_kg": 2426.35,
+      "stop_count": 17,
+      "stops": [
+        {
+          "sequence": 1,
+          "job_id": "9612",
+          "name": "Sri nanjundeshwara rice traders",
+          "area_id": "5088",
+          "lat": 12.9764986,
+          "lon": 77.5236102,
+          "weight": 110.0
+        },
+        {
+          "sequence": 2,
+          "job_id": "6140",
+          "name": "Bharath Provision Store",
+          "area_id": "5088",
+          "lat": 12.9706738,
+          "lon": 77.523911,
+          "weight": 252.5
+        },
+        {
+          "sequence": 3,
+          "job_id": "6238",
+          "name": "Siddlingeshwara Provision Store",
+          "area_id": "5088",
+          "lat": 12.9674262,
+          "lon": 77.52385,
+          "weight": 120.0
+        },
+        {
+          "sequence": 4,
+          "job_id": "7133",
+          "name": "Sree Veerabhadreshwara Rice Corner",
+          "area_id": "5088",
+          "lat": 12.9618028,
+          "lon": 77.5210581,
+          "weight": 50.0
+        },
+        {
+          "sequence": 5,
+          "job_id": "6233",
+          "name": "BSVR PROVISION STORE",
+          "area_id": "5088",
+          "lat": 12.9584258,
+          "lon": 77.5165036,
+          "weight": 128.0
+        },
+        {
+          "sequence": 6,
+          "job_id": "7221",
+          "name": "srs buy and save",
+          "area_id": "5079",
+          "lat": 12.9580502,
+          "lon": 77.5257321,
+          "weight": 170.0
+        },
+        {
+          "sequence": 7,
+          "job_id": "7303",
+          "name": "MUNIRAJU STORE",
+          "area_id": "5079",
+          "lat": 12.9548678,
+          "lon": 77.5248149,
+          "weight": 104.0
+        },
+        {
+          "sequence": 8,
+          "job_id": "6877",
+          "name": "LJ IYENGAR BAKERY",
+          "area_id": "5079",
+          "lat": 12.9501377,
+          "lon": 77.5269008,
+          "weight": 150.0
+        },
+        {
+          "sequence": 9,
+          "job_id": "9375",
+          "name": "Amit store",
+          "area_id": "5088",
+          "lat": 12.949297122219571,
+          "lon": 77.52927169203758,
+          "weight": 105.0
         },
         {
           "sequence": 10,
-          "job_id": "6695",
-          "name": "MAMATHA KIRANA STORE",
+          "job_id": "6546",
+          "name": "vijilakshmi provision store",
+          "area_id": "5088",
+          "lat": 12.957052,
+          "lon": 77.532434,
+          "weight": 142.0
+        },
+        {
+          "sequence": 11,
+          "job_id": "7229",
+          "name": "sri lakshmi vekateshwara rice traders",
+          "area_id": "5088",
+          "lat": 12.9568581,
+          "lon": 77.5330915,
+          "weight": 100.0
+        },
+        {
+          "sequence": 12,
+          "job_id": "6544",
+          "name": "mallu fruits and veg",
+          "area_id": "5088",
+          "lat": 12.956813,
+          "lon": 77.539994,
+          "weight": 128.0
+        },
+        {
+          "sequence": 13,
+          "job_id": "6557",
+          "name": "M B S Store",
+          "area_id": "5088",
+          "lat": 12.957228,
+          "lon": 77.541771,
+          "weight": 140.0
+        },
+        {
+          "sequence": 14,
+          "job_id": "6537",
+          "name": "Manjunateshwara provision store",
+          "area_id": "5088",
+          "lat": 12.958022,
+          "lon": 77.540962,
+          "weight": 34.85
+        },
+        {
+          "sequence": 15,
+          "job_id": "6526",
+          "name": "sangam ricecorner",
+          "area_id": "5088",
+          "lat": 12.958068,
+          "lon": 77.540896,
+          "weight": 312.0
+        },
+        {
+          "sequence": 16,
+          "job_id": "8848",
+          "name": "s k taredes store",
+          "area_id": "5087",
+          "lat": 12.9607833,
+          "lon": 77.5427972,
+          "weight": 120.0
+        },
+        {
+          "sequence": 17,
+          "job_id": "6800",
+          "name": "Bismillah store",
+          "area_id": "5087",
+          "lat": 12.961127,
+          "lon": 77.5426513,
+          "weight": 260.0
+        }
+      ]
+    },
+    {
+      "vehicle_id": 9,
+      "distance_km": 43.25,
+      "load_kg": 2455.28,
+      "stop_count": 13,
+      "stops": [
+        {
+          "sequence": 1,
+          "job_id": "5181",
+          "name": "sri raghavendra swamy provision store",
           "area_id": "5078",
-          "lat": 12.955489,
-          "lon": 77.467113,
-          "weight": 426.0
+          "lat": 12.9847886,
+          "lon": 77.5142549,
+          "weight": 424.0
+        },
+        {
+          "sequence": 2,
+          "job_id": "9527",
+          "name": "mathaji provision store",
+          "area_id": "5078",
+          "lat": 12.9179088,
+          "lon": 77.4767456,
+          "weight": 236.0
+        },
+        {
+          "sequence": 3,
+          "job_id": "8068",
+          "name": "P.M Provision store",
+          "area_id": "5143",
+          "lat": 12.910996510551078,
+          "lon": 77.48332612216473,
+          "weight": 120.0
+        },
+        {
+          "sequence": 4,
+          "job_id": "9316",
+          "name": "Sri Byraveshwara Rice Traders",
+          "area_id": "5143",
+          "lat": 12.9106515,
+          "lon": 77.4864491,
+          "weight": 303.0
+        },
+        {
+          "sequence": 5,
+          "job_id": "8269",
+          "name": "Happy Home Super Mart",
+          "area_id": "5143",
+          "lat": 12.900569745957673,
+          "lon": 77.48752914369106,
+          "weight": 90.0
+        },
+        {
+          "sequence": 6,
+          "job_id": "7744",
+          "name": "Sri Gangaparameshwari grandige and provision store",
+          "area_id": "5143",
+          "lat": 12.900181164507234,
+          "lon": 77.48781647533178,
+          "weight": 142.0
+        },
+        {
+          "sequence": 7,
+          "job_id": "9568",
+          "name": "Poorvika condiments & Provision Store",
+          "area_id": "5143",
+          "lat": 12.877884272146163,
+          "lon": 77.5166991725564,
+          "weight": 358.0
+        },
+        {
+          "sequence": 8,
+          "job_id": "10451",
+          "name": "Sri Venkateshwara provision stores",
+          "area_id": "5143",
+          "lat": 12.8698003,
+          "lon": 77.4798335,
+          "weight": 157.0
+        },
+        {
+          "sequence": 9,
+          "job_id": "9226",
+          "name": "V Mart",
+          "area_id": "5143",
+          "lat": 12.8747386,
+          "lon": 77.4793536,
+          "weight": 90.0
+        },
+        {
+          "sequence": 10,
+          "job_id": "9931",
+          "name": "MN Fazil Store",
+          "area_id": "5143",
+          "lat": 12.892317244362323,
+          "lon": 77.4579755589366,
+          "weight": 260.0
+        },
+        {
+          "sequence": 11,
+          "job_id": "9752",
+          "name": "Vandana provision store",
+          "area_id": "5143",
+          "lat": 12.8962062,
+          "lon": 77.4539424,
+          "weight": 92.08
+        },
+        {
+          "sequence": 12,
+          "job_id": "10893",
+          "name": "Nishmika Catering Service",
+          "area_id": "5143",
+          "lat": 12.911473964582527,
+          "lon": 77.44200501590967,
+          "weight": 53.2
+        },
+        {
+          "sequence": 13,
+          "job_id": "9972",
+          "name": "near by store",
+          "area_id": "5143",
+          "lat": 12.8732092,
+          "lon": 77.4352359,
+          "weight": 130.0
+        }
+      ]
+    },
+    {
+      "vehicle_id": 10,
+      "distance_km": 31.91,
+      "load_kg": 2662.07,
+      "stop_count": 14,
+      "stops": [
+        {
+          "sequence": 1,
+          "job_id": "6448",
+          "name": "sri lakshmi channakeshava traders",
+          "area_id": "5090",
+          "lat": 13.027704018541256,
+          "lon": 77.55711570382118,
+          "weight": 154.0
+        },
+        {
+          "sequence": 2,
+          "job_id": "6354",
+          "name": "Bhyraveshwara Rice Traders",
+          "area_id": "5086",
+          "lat": 13.050873,
+          "lon": 77.567882,
+          "weight": 464.0
+        },
+        {
+          "sequence": 3,
+          "job_id": "8872",
+          "name": "sri Balaji rice traders",
+          "area_id": "5090",
+          "lat": 13.0376091,
+          "lon": 77.596684,
+          "weight": 100.0
+        },
+        {
+          "sequence": 4,
+          "job_id": "8395",
+          "name": "Welcome provision store",
+          "area_id": "5090",
+          "lat": 13.0384297,
+          "lon": 77.6022004,
+          "weight": 130.0
+        },
+        {
+          "sequence": 5,
+          "job_id": "8811",
+          "name": "sri ragavedra general store",
+          "area_id": "5090",
+          "lat": 13.031910536633426,
+          "lon": 77.60709296911955,
+          "weight": 300.0
+        },
+        {
+          "sequence": 6,
+          "job_id": "7731",
+          "name": "M M STORES",
+          "area_id": "5090",
+          "lat": 13.0184034,
+          "lon": 77.5879622,
+          "weight": 70.0
+        },
+        {
+          "sequence": 7,
+          "job_id": "8102",
+          "name": "sri Ranganath Store",
+          "area_id": "5090",
+          "lat": 12.9957747,
+          "lon": 77.5769547,
+          "weight": 112.32
+        },
+        {
+          "sequence": 8,
+          "job_id": "8037",
+          "name": "new provision store",
+          "area_id": "5090",
+          "lat": 12.993593,
+          "lon": 77.5930732,
+          "weight": 87.6
+        },
+        {
+          "sequence": 9,
+          "job_id": "10903",
+          "name": "Sri Ayyappa General Stores",
+          "area_id": "5087",
+          "lat": 12.9571058,
+          "lon": 77.5902234,
+          "weight": 340.0
+        },
+        {
+          "sequence": 10,
+          "job_id": "10710",
+          "name": "AB Traders",
+          "area_id": "5087",
+          "lat": 12.9498762,
+          "lon": 77.6008124,
+          "weight": 172.0
+        },
+        {
+          "sequence": 11,
+          "job_id": "10611",
+          "name": "Jai Hanuman Rice Corner",
+          "area_id": "5087",
+          "lat": 12.9429843,
+          "lon": 77.5997561,
+          "weight": 356.0
+        },
+        {
+          "sequence": 12,
+          "job_id": "9582",
+          "name": "kenz mini mart",
+          "area_id": "5087",
+          "lat": 12.9427021,
+          "lon": 77.5929462,
+          "weight": 130.0
+        },
+        {
+          "sequence": 13,
+          "job_id": "9352",
+          "name": "m r departmental Store",
+          "area_id": "5087",
+          "lat": 12.9343996,
+          "lon": 77.5926522,
+          "weight": 168.15
+        },
+        {
+          "sequence": 14,
+          "job_id": "9490",
+          "name": "fazal store",
+          "area_id": "5082",
+          "lat": 12.9181573,
+          "lon": 77.5884042,
+          "weight": 78.0
+        }
+      ]
+    },
+    {
+      "vehicle_id": 11,
+      "distance_km": 36.22,
+      "load_kg": 2508.0,
+      "stop_count": 8,
+      "stops": [
+        {
+          "sequence": 1,
+          "job_id": "7598",
+          "name": "NEW M C M Store",
+          "area_id": "5085",
+          "lat": 12.9853913,
+          "lon": 77.5679511,
+          "weight": 98.0
+        },
+        {
+          "sequence": 2,
+          "job_id": "7514",
+          "name": "Asharaf / M M Provision Store",
+          "area_id": "5081",
+          "lat": 12.9844791,
+          "lon": 77.5618228,
+          "weight": 218.0
+        },
+        {
+          "sequence": 3,
+          "job_id": "7766",
+          "name": "SRI VENKATESWARA PROVISION STORE AND RICE",
+          "area_id": "5087",
+          "lat": 12.9700897,
+          "lon": 77.5599521,
+          "weight": 154.0
+        },
+        {
+          "sequence": 4,
+          "job_id": "7457",
+          "name": "Narayana provision Store",
+          "area_id": "5087",
+          "lat": 12.9676356,
+          "lon": 77.5604076,
+          "weight": 156.0
+        },
+        {
+          "sequence": 5,
+          "job_id": "7363",
+          "name": "H M S GENERAL STORE",
+          "area_id": "5087",
+          "lat": 12.9651251,
+          "lon": 77.565533,
+          "weight": 151.0
+        },
+        {
+          "sequence": 6,
+          "job_id": "10134",
+          "name": "mayank provision store",
+          "area_id": "5142",
+          "lat": 12.8477177,
+          "lon": 77.5152785,
+          "weight": 980.0
+        },
+        {
+          "sequence": 7,
+          "job_id": "10006",
+          "name": "Sri nidhi traders",
+          "area_id": "5142",
+          "lat": 12.8040038,
+          "lon": 77.5064608,
+          "weight": 376.0
+        },
+        {
+          "sequence": 8,
+          "job_id": "10084",
+          "name": "kaveri provison store",
+          "area_id": "5142",
+          "lat": 12.779567,
+          "lon": 77.497513,
+          "weight": 375.0
+        }
+      ]
+    },
+    {
+      "vehicle_id": 12,
+      "distance_km": 27.77,
+      "load_kg": 3008.35,
+      "stop_count": 17,
+      "stops": [
+        {
+          "sequence": 1,
+          "job_id": "9649",
+          "name": "Sri Manjunath Udupi Veg",
+          "area_id": "5089",
+          "lat": 12.9922721,
+          "lon": 77.5054772,
+          "weight": 76.0
+        },
+        {
+          "sequence": 2,
+          "job_id": "10561",
+          "name": "MR Hoskote Dum Biriyani",
+          "area_id": "5080",
+          "lat": 12.9845883,
+          "lon": 77.4863507,
+          "weight": 69.0
+        },
+        {
+          "sequence": 3,
+          "job_id": "5464",
+          "name": "Sri Krishna Provision Store",
+          "area_id": "5080",
+          "lat": 12.982892,
+          "lon": 77.4788096,
+          "weight": 56.0
+        },
+        {
+          "sequence": 4,
+          "job_id": "5188",
+          "name": "Likitha Provision Store",
+          "area_id": "5078",
+          "lat": 12.9788055,
+          "lon": 77.4739377,
+          "weight": 150.10999999999996
+        },
+        {
+          "sequence": 5,
+          "job_id": "9522",
+          "name": "Hare Krishna provision store",
+          "area_id": "5080",
+          "lat": 12.9907776,
+          "lon": 77.4610099,
+          "weight": 315.0
+        },
+        {
+          "sequence": 6,
+          "job_id": "5104",
+          "name": "Lakshmi devi Provision store",
+          "area_id": "5080",
+          "lat": 12.9894736,
+          "lon": 77.4603374,
+          "weight": 129.7
+        },
+        {
+          "sequence": 7,
+          "job_id": "5313",
+          "name": "Sri Hemagiri Provision store",
+          "area_id": "5080",
+          "lat": 12.9898447,
+          "lon": 77.4590612,
+          "weight": 126.25000000000001
+        },
+        {
+          "sequence": 8,
+          "job_id": "5060",
+          "name": "Durga Store",
+          "area_id": "5080",
+          "lat": 12.9962909,
+          "lon": 77.4521481,
+          "weight": 82.63
+        },
+        {
+          "sequence": 9,
+          "job_id": "5027",
+          "name": "SRINIVASA PROVISION STORE",
+          "area_id": "5080",
+          "lat": 12.9924433,
+          "lon": 77.4518814,
+          "weight": 350.14
+        },
+        {
+          "sequence": 10,
+          "job_id": "8013",
+          "name": "Halli Masala",
+          "area_id": "5080",
+          "lat": 12.987246,
+          "lon": 77.4479156,
+          "weight": 408.25
+        },
+        {
+          "sequence": 11,
+          "job_id": "6499",
+          "name": "Mataji Rice Traders",
+          "area_id": "5080",
+          "lat": 12.983531,
+          "lon": 77.44352,
+          "weight": 138.60000000000002
+        },
+        {
+          "sequence": 12,
+          "job_id": "8014",
+          "name": "Lakshmi Venkateshwara Provision store 3",
+          "area_id": "5080",
+          "lat": 12.9732207,
+          "lon": 77.4489434,
+          "weight": 520.0
+        },
+        {
+          "sequence": 13,
+          "job_id": "9078",
+          "name": "Ramdev provision Stores",
+          "area_id": "5080",
+          "lat": 12.9698885,
+          "lon": 77.4424083,
+          "weight": 156.0
+        },
+        {
+          "sequence": 14,
+          "job_id": "6481",
+          "name": "Sri Pooja provision store",
+          "area_id": "5080",
+          "lat": 12.966191,
+          "lon": 77.437138,
+          "weight": 100.60000000000001
+        },
+        {
+          "sequence": 15,
+          "job_id": "5404",
+          "name": "SRS provision  store",
+          "area_id": "5080",
+          "lat": 12.949799335903611,
+          "lon": 77.42359433323145,
+          "weight": 23.12
+        },
+        {
+          "sequence": 16,
+          "job_id": "5317",
+          "name": "SKStores",
+          "area_id": "5080",
+          "lat": 12.9651562,
+          "lon": 77.4006735,
+          "weight": 195.0
+        },
+        {
+          "sequence": 17,
+          "job_id": "5332",
+          "name": "S.M Provision Store",
+          "area_id": "5080",
+          "lat": 12.9651652,
+          "lon": 77.4006177,
+          "weight": 111.95
+        }
+      ]
+    },
+    {
+      "vehicle_id": 13,
+      "distance_km": 18.83,
+      "load_kg": 2856.88,
+      "stop_count": 13,
+      "stops": [
+        {
+          "sequence": 1,
+          "job_id": "6097",
+          "name": "Chikpet Donne Biriyani",
+          "area_id": "5078",
+          "lat": 12.9797393,
+          "lon": 77.5104579,
+          "weight": 117.75
+        },
+        {
+          "sequence": 2,
+          "job_id": "7081",
+          "name": "Grocery world",
+          "area_id": "5078",
+          "lat": 12.9772843,
+          "lon": 77.4996562,
+          "weight": 106.0
+        },
+        {
+          "sequence": 3,
+          "job_id": "5151",
+          "name": "Srinivasa departmental store",
+          "area_id": "5078",
+          "lat": 12.971301,
+          "lon": 77.4967783,
+          "weight": 280.0
+        },
+        {
+          "sequence": 4,
+          "job_id": "5436",
+          "name": "Shree bhairaveshwara rice traders",
+          "area_id": "5078",
+          "lat": 12.9685621,
+          "lon": 77.5023401,
+          "weight": 283.22999999999996
+        },
+        {
+          "sequence": 5,
+          "job_id": "5435",
+          "name": "shree Annapoorneshwari rice traders 2",
+          "area_id": "5078",
+          "lat": 12.9679398,
+          "lon": 77.5019798,
+          "weight": 224.0
+        },
+        {
+          "sequence": 6,
+          "job_id": "9881",
+          "name": "sri Nanjundeshwara provision store",
+          "area_id": "5078",
+          "lat": 12.9620422,
+          "lon": 77.5034958,
+          "weight": 308.0
+        },
+        {
+          "sequence": 7,
+          "job_id": "5770",
+          "name": "Lakshmi traders",
+          "area_id": "5078",
+          "lat": 12.9528886,
+          "lon": 77.4994129,
+          "weight": 104.0
+        },
+        {
+          "sequence": 8,
+          "job_id": "8122",
+          "name": "Green zone",
+          "area_id": "5078",
+          "lat": 12.9476824,
+          "lon": 77.4968326,
+          "weight": 79.9
+        },
+        {
+          "sequence": 9,
+          "job_id": "9859",
+          "name": "Asha Hotel",
+          "area_id": "5078",
+          "lat": 12.950953737365788,
+          "lon": 77.48710568994284,
+          "weight": 288.0
+        },
+        {
+          "sequence": 10,
+          "job_id": "9604",
+          "name": "Raghavendra Traders",
+          "area_id": "5078",
+          "lat": 12.9515664,
+          "lon": 77.4819691,
+          "weight": 82.0
         },
         {
           "sequence": 11,
@@ -1578,55 +1587,28 @@
         },
         {
           "sequence": 12,
+          "job_id": "6695",
+          "name": "MAMATHA KIRANA STORE",
+          "area_id": "5078",
+          "lat": 12.955489,
+          "lon": 77.467113,
+          "weight": 426.0
+        },
+        {
+          "sequence": 13,
           "job_id": "9630",
           "name": "Sri Ranganatha Enterprises",
           "area_id": "5078",
           "lat": 12.9492283,
           "lon": 77.469649,
           "weight": 158.0
-        },
-        {
-          "sequence": 13,
-          "job_id": "9147",
-          "name": "Indian rice traders",
-          "area_id": "5078",
-          "lat": 12.9385257,
-          "lon": 77.4772987,
-          "weight": 676.0
-        },
-        {
-          "sequence": 14,
-          "job_id": "5744",
-          "name": "Nanjundeshwara provision store",
-          "area_id": "5078",
-          "lat": 12.9377891,
-          "lon": 77.4811951,
-          "weight": 250.0
-        },
-        {
-          "sequence": 15,
-          "job_id": "8686",
-          "name": "chinmay Bakery and sweets",
-          "area_id": "5078",
-          "lat": 12.9320447,
-          "lon": 77.4878552,
-          "weight": 90.0
-        },
-        {
-          "sequence": 16,
-          "job_id": "9527",
-          "name": "mathaji provision store",
-          "area_id": "5078",
-          "lat": 12.9179088,
-          "lon": 77.4767456,
-          "weight": 236.0
         }
       ]
     },
     {
       "vehicle_id": 14,
-      "distance_km": 47.18,
-      "load_kg": 3085.22,
+      "distance_km": 46.89,
+      "load_kg": 3131.82,
       "stop_count": 17,
       "stops": [
         {
@@ -1667,39 +1649,39 @@
         },
         {
           "sequence": 5,
-          "job_id": "9711",
-          "name": "K .J. STORE",
+          "job_id": "10664",
+          "name": "sri raitamitra rice traders",
           "area_id": "5142",
-          "lat": 12.8722993,
-          "lon": 77.5662314,
-          "weight": 130.0
+          "lat": 12.8686203,
+          "lon": 77.5818218,
+          "weight": 230.0
         },
         {
           "sequence": 6,
-          "job_id": "9636",
-          "name": "janapriya store",
+          "job_id": "10262",
+          "name": "mathaji provision store",
           "area_id": "5142",
-          "lat": 12.8715447,
-          "lon": 77.5663597,
-          "weight": 530.0
+          "lat": 12.8666249,
+          "lon": 77.5754078,
+          "weight": 26.0
         },
         {
           "sequence": 7,
-          "job_id": "9655",
-          "name": "sri adi bhairaweshwara provision store",
+          "job_id": "10494",
+          "name": "sree Vasudev provision store",
           "area_id": "5142",
-          "lat": 12.862053,
-          "lon": 77.5633587,
-          "weight": 60.0
+          "lat": 12.8646947,
+          "lon": 77.5768496,
+          "weight": 52.0
         },
         {
           "sequence": 8,
-          "job_id": "10136",
-          "name": "SRI S.L.V STORES",
+          "job_id": "10527",
+          "name": "Ashwini provision store",
           "area_id": "5142",
-          "lat": 12.8613229,
-          "lon": 77.5653726,
-          "weight": 182.0
+          "lat": 12.8561864,
+          "lon": 77.5766675,
+          "weight": 5.0
         },
         {
           "sequence": 9,
@@ -1712,66 +1694,66 @@
         },
         {
           "sequence": 10,
-          "job_id": "10262",
-          "name": "mathaji provision store",
+          "job_id": "10136",
+          "name": "SRI S.L.V STORES",
           "area_id": "5142",
-          "lat": 12.8666249,
-          "lon": 77.5754078,
-          "weight": 26.0
+          "lat": 12.8613229,
+          "lon": 77.5653726,
+          "weight": 182.0
         },
         {
           "sequence": 11,
-          "job_id": "10664",
-          "name": "sri raitamitra rice traders",
+          "job_id": "9675",
+          "name": "mataji stor",
           "area_id": "5142",
-          "lat": 12.8686203,
-          "lon": 77.5818218,
-          "weight": 230.0
+          "lat": 12.8598549,
+          "lon": 77.5632177,
+          "weight": 546.9
         },
         {
           "sequence": 12,
-          "job_id": "10494",
-          "name": "sree Vasudev provision store",
+          "job_id": "9655",
+          "name": "sri adi bhairaweshwara provision store",
           "area_id": "5142",
-          "lat": 12.8646947,
-          "lon": 77.5768496,
-          "weight": 52.0
+          "lat": 12.862053,
+          "lon": 77.5633587,
+          "weight": 60.0
         },
         {
           "sequence": 13,
-          "job_id": "10527",
-          "name": "Ashwini provision store",
+          "job_id": "9636",
+          "name": "janapriya store",
           "area_id": "5142",
-          "lat": 12.8561864,
-          "lon": 77.5766675,
-          "weight": 5.0
+          "lat": 12.8715447,
+          "lon": 77.5663597,
+          "weight": 530.0
         },
         {
           "sequence": 14,
+          "job_id": "9711",
+          "name": "K .J. STORE",
+          "area_id": "5142",
+          "lat": 12.8722993,
+          "lon": 77.5662314,
+          "weight": 130.0
+        },
+        {
+          "sequence": 15,
+          "job_id": "9947",
+          "name": "Venkateshwara tredars",
+          "area_id": "5142",
+          "lat": 12.869423470809936,
+          "lon": 77.54331674426794,
+          "weight": 250.70000000000002
+        },
+        {
+          "sequence": 16,
           "job_id": "10003",
           "name": "vaibhav traders",
           "area_id": "5142",
           "lat": 12.8026368,
           "lon": 77.5085631,
           "weight": 234.0
-        },
-        {
-          "sequence": 15,
-          "job_id": "10006",
-          "name": "Sri nidhi traders",
-          "area_id": "5142",
-          "lat": 12.8040038,
-          "lon": 77.5064608,
-          "weight": 376.0
-        },
-        {
-          "sequence": 16,
-          "job_id": "10084",
-          "name": "kaveri provison store",
-          "area_id": "5142",
-          "lat": 12.779567,
-          "lon": 77.497513,
-          "weight": 375.0
         },
         {
           "sequence": 17,
@@ -1786,27 +1768,27 @@
     },
     {
       "vehicle_id": 15,
-      "distance_km": 27.76,
-      "load_kg": 3049.44,
-      "stop_count": 16,
+      "distance_km": 28.84,
+      "load_kg": 3121.98,
+      "stop_count": 19,
       "stops": [
         {
           "sequence": 1,
-          "job_id": "8203",
-          "name": "BYRAVESHWARA RICE TRADERS",
-          "area_id": "5076",
-          "lat": 13.0574164,
-          "lon": 77.5985046,
-          "weight": 363.0
+          "job_id": "7570",
+          "name": "SRI CHOWDESHWARI RICE TRADERS",
+          "area_id": "5084",
+          "lat": 13.0576353,
+          "lon": 77.5894742,
+          "weight": 104.0
         },
         {
           "sequence": 2,
-          "job_id": "8260",
-          "name": "SRI CHOWDESHWARI PROVISION STORE",
+          "job_id": "8078",
+          "name": "R. R. M. store",
           "area_id": "5076",
-          "lat": 13.0583405,
-          "lon": 77.6031705,
-          "weight": 89.6
+          "lat": 13.0662486,
+          "lon": 77.6009702,
+          "weight": 193.14
         },
         {
           "sequence": 3,
@@ -1846,15 +1828,6 @@
         },
         {
           "sequence": 7,
-          "job_id": "9703",
-          "name": "LAKSHMI PROVISION STORE",
-          "area_id": "5076",
-          "lat": 13.077562,
-          "lon": 77.6532573,
-          "weight": 546.0
-        },
-        {
-          "sequence": 8,
           "job_id": "8314",
           "name": "MANJU STORE",
           "area_id": "5076",
@@ -1863,7 +1836,7 @@
           "weight": 234.0
         },
         {
-          "sequence": 9,
+          "sequence": 8,
           "job_id": "8066",
           "name": "Yashode Provisions",
           "area_id": "5076",
@@ -1872,7 +1845,7 @@
           "weight": 158.8
         },
         {
-          "sequence": 10,
+          "sequence": 9,
           "job_id": "8657",
           "name": "durga store",
           "area_id": "5076",
@@ -1881,7 +1854,25 @@
           "weight": 150.25
         },
         {
+          "sequence": 10,
+          "job_id": "8082",
+          "name": "MAHADEV PROVISION STORE",
+          "area_id": "5076",
+          "lat": 13.098269,
+          "lon": 77.6261763,
+          "weight": 200.0
+        },
+        {
           "sequence": 11,
+          "job_id": "8171",
+          "name": "BYRAVESHWARA TRADERS",
+          "area_id": "5076",
+          "lat": 13.0893955,
+          "lon": 77.6191701,
+          "weight": 182.0
+        },
+        {
+          "sequence": 12,
           "job_id": "10897",
           "name": "prakruthi provision store",
           "area_id": "5076",
@@ -1890,7 +1881,7 @@
           "weight": 233.5
         },
         {
-          "sequence": 12,
+          "sequence": 13,
           "job_id": "7737",
           "name": "NARAHARI SUPER MARKET",
           "area_id": "5076",
@@ -1899,7 +1890,7 @@
           "weight": 60.0
         },
         {
-          "sequence": 13,
+          "sequence": 14,
           "job_id": "8799",
           "name": "nethra store",
           "area_id": "5076",
@@ -1908,7 +1899,7 @@
           "weight": 39.089999999999996
         },
         {
-          "sequence": 14,
+          "sequence": 15,
           "job_id": "8886",
           "name": "BHANU RICE AND OIL TRADERS",
           "area_id": "5076",
@@ -1917,7 +1908,7 @@
           "weight": 180.0
         },
         {
-          "sequence": 15,
+          "sequence": 16,
           "job_id": "8854",
           "name": "Karni Provision Store",
           "area_id": "5076",
@@ -1926,78 +1917,42 @@
           "weight": 330.0
         },
         {
-          "sequence": 16,
+          "sequence": 17,
           "job_id": "8855",
           "name": "Krishna rice traders",
           "area_id": "5076",
           "lat": 13.122302005004746,
           "lon": 77.62927684932947,
           "weight": 180.0
+        },
+        {
+          "sequence": 18,
+          "job_id": "10759",
+          "name": "sri annapoorna rice Traders",
+          "area_id": "5076",
+          "lat": 13.119656841831286,
+          "lon": 77.62836791574955,
+          "weight": 192.0
+        },
+        {
+          "sequence": 19,
+          "job_id": "8716",
+          "name": "sri sarveshwara Rice Traders",
+          "area_id": "5076",
+          "lat": 13.1169547,
+          "lon": 77.6254395,
+          "weight": 200.0
         }
       ]
     },
     {
       "vehicle_id": 16,
-      "distance_km": 28.89,
-      "load_kg": 3194.75,
-      "stop_count": 18,
+      "distance_km": 24.19,
+      "load_kg": 3029.39,
+      "stop_count": 12,
       "stops": [
         {
           "sequence": 1,
-          "job_id": "7221",
-          "name": "srs buy and save",
-          "area_id": "5079",
-          "lat": 12.9580502,
-          "lon": 77.5257321,
-          "weight": 170.0
-        },
-        {
-          "sequence": 2,
-          "job_id": "7303",
-          "name": "MUNIRAJU STORE",
-          "area_id": "5079",
-          "lat": 12.9548678,
-          "lon": 77.5248149,
-          "weight": 104.0
-        },
-        {
-          "sequence": 3,
-          "job_id": "6877",
-          "name": "LJ IYENGAR BAKERY",
-          "area_id": "5079",
-          "lat": 12.9501377,
-          "lon": 77.5269008,
-          "weight": 150.0
-        },
-        {
-          "sequence": 4,
-          "job_id": "6970",
-          "name": "LITHIKSHA PROVISION STORE",
-          "area_id": "5079",
-          "lat": 12.9440696,
-          "lon": 77.5200348,
-          "weight": 320.0
-        },
-        {
-          "sequence": 5,
-          "job_id": "8975",
-          "name": "Lucky Enterprises",
-          "area_id": "5079",
-          "lat": 12.9429303,
-          "lon": 77.5220208,
-          "weight": 190.0
-        },
-        {
-          "sequence": 6,
-          "job_id": "9706",
-          "name": "A B store",
-          "area_id": "5079",
-          "lat": 12.941483108938167,
-          "lon": 77.52406418323517,
-          "weight": 816.0
-        },
-        {
-          "sequence": 7,
           "job_id": "7473",
           "name": "Annapurna swari stores",
           "area_id": "5079",
@@ -2006,16 +1961,25 @@
           "weight": 74.5
         },
         {
-          "sequence": 8,
-          "job_id": "7057",
-          "name": "SRI DEVI PROVISION STORE",
+          "sequence": 2,
+          "job_id": "8975",
+          "name": "Lucky Enterprises",
           "area_id": "5079",
-          "lat": 12.9391879,
-          "lon": 77.5313945,
-          "weight": 82.55999999999999
+          "lat": 12.9429303,
+          "lon": 77.5220208,
+          "weight": 190.0
         },
         {
-          "sequence": 9,
+          "sequence": 3,
+          "job_id": "9706",
+          "name": "A B store",
+          "area_id": "5079",
+          "lat": 12.941483108938167,
+          "lon": 77.52406418323517,
+          "weight": 816.0
+        },
+        {
+          "sequence": 4,
           "job_id": "10957",
           "name": "Ranga provisian store",
           "area_id": "5079",
@@ -2024,7 +1988,7 @@
           "weight": 32.440000000000005
         },
         {
-          "sequence": 10,
+          "sequence": 5,
           "job_id": "9093",
           "name": "sri mahadeshwara store",
           "area_id": "5079",
@@ -2033,7 +1997,7 @@
           "weight": 100.25
         },
         {
-          "sequence": 11,
+          "sequence": 6,
           "job_id": "7174",
           "name": "Sri Ganga provision Store",
           "area_id": "5079",
@@ -2042,7 +2006,16 @@
           "weight": 130.0
         },
         {
-          "sequence": 12,
+          "sequence": 7,
+          "job_id": "9841",
+          "name": "Sri vari green house fruit and vegetablesa& grocery",
+          "area_id": "5079",
+          "lat": 12.9134809,
+          "lon": 77.5057058,
+          "weight": 825.2
+        },
+        {
+          "sequence": 8,
           "job_id": "7160",
           "name": "Sri Bramalingeshwara Traders",
           "area_id": "5079",
@@ -2051,34 +2024,7 @@
           "weight": 178.0
         },
         {
-          "sequence": 13,
-          "job_id": "7190",
-          "name": "Preetham Rice Corner",
-          "area_id": "5079",
-          "lat": 12.9115057,
-          "lon": 77.5210866,
-          "weight": 236.0
-        },
-        {
-          "sequence": 14,
-          "job_id": "10020",
-          "name": "Suggi Fresh",
-          "area_id": "5079",
-          "lat": 12.9003553,
-          "lon": 77.5231669,
-          "weight": 312.0
-        },
-        {
-          "sequence": 15,
-          "job_id": "7368",
-          "name": "Murdeshwara Provision Store",
-          "area_id": "5079",
-          "lat": 12.898316684139507,
-          "lon": 77.52319782972336,
-          "weight": 98.0
-        },
-        {
-          "sequence": 16,
+          "sequence": 9,
           "job_id": "9091",
           "name": "Mandya Raithara Thota",
           "area_id": "5079",
@@ -2087,30 +2033,39 @@
           "weight": 37.0
         },
         {
-          "sequence": 17,
-          "job_id": "10290",
-          "name": "ANU HOTEL",
+          "sequence": 10,
+          "job_id": "7190",
+          "name": "Preetham Rice Corner",
           "area_id": "5079",
-          "lat": 12.9166055,
-          "lon": 77.5003378,
-          "weight": 60.0
+          "lat": 12.9115057,
+          "lon": 77.5210866,
+          "weight": 236.0
         },
         {
-          "sequence": 18,
-          "job_id": "9051",
-          "name": "Siddganga store",
+          "sequence": 11,
+          "job_id": "10020",
+          "name": "Suggi Fresh",
           "area_id": "5079",
-          "lat": 12.9192464,
-          "lon": 77.490733,
-          "weight": 104.0
+          "lat": 12.9003553,
+          "lon": 77.5231669,
+          "weight": 312.0
+        },
+        {
+          "sequence": 12,
+          "job_id": "7368",
+          "name": "Murdeshwara Provision Store",
+          "area_id": "5079",
+          "lat": 12.898316684139507,
+          "lon": 77.52319782972336,
+          "weight": 98.0
         }
       ]
     },
     {
       "vehicle_id": 17,
-      "distance_km": 16.66,
-      "load_kg": 2813.52,
-      "stop_count": 21,
+      "distance_km": 18.08,
+      "load_kg": 2934.62,
+      "stop_count": 20,
       "stops": [
         {
           "sequence": 1,
@@ -2159,6 +2114,15 @@
         },
         {
           "sequence": 6,
+          "job_id": "5574",
+          "name": "sri byraweshwara Stores",
+          "area_id": "5089",
+          "lat": 13.0059902,
+          "lon": 77.5052107,
+          "weight": 260.0
+        },
+        {
+          "sequence": 7,
           "job_id": "5194",
           "name": "Shree Basaveshwara provision store",
           "area_id": "5089",
@@ -2167,7 +2131,7 @@
           "weight": 55.0
         },
         {
-          "sequence": 7,
+          "sequence": 8,
           "job_id": "10679",
           "name": "SRI Nanjundeswara store",
           "area_id": "5089",
@@ -2176,43 +2140,7 @@
           "weight": 18.92
         },
         {
-          "sequence": 8,
-          "job_id": "5093",
-          "name": "S L V Store",
-          "area_id": "5089",
-          "lat": 13.0008531,
-          "lon": 77.5015212,
-          "weight": 180.9
-        },
-        {
           "sequence": 9,
-          "job_id": "5078",
-          "name": "SRI KEMPAMMADEVI RICE TRADERS",
-          "area_id": "5089",
-          "lat": 12.9973001,
-          "lon": 77.5007527,
-          "weight": 90.0
-        },
-        {
-          "sequence": 10,
-          "job_id": "7993",
-          "name": "SRI REVANNA SIDDESHWARA WHOLESALE TRADERS -2",
-          "area_id": "5089",
-          "lat": 12.9964909,
-          "lon": 77.4991257,
-          "weight": 325.58
-        },
-        {
-          "sequence": 11,
-          "job_id": "5098",
-          "name": "om Shakthi provision store",
-          "area_id": "5089",
-          "lat": 13.0006324,
-          "lon": 77.4982464,
-          "weight": 80.0
-        },
-        {
-          "sequence": 12,
           "job_id": "8376",
           "name": "Sri balaji provision Store",
           "area_id": "5089",
@@ -2221,16 +2149,25 @@
           "weight": 128.0
         },
         {
-          "sequence": 13,
-          "job_id": "10391",
-          "name": "sri veeranjaneya provision store",
+          "sequence": 10,
+          "job_id": "5098",
+          "name": "om Shakthi provision store",
           "area_id": "5089",
-          "lat": 12.9980344,
-          "lon": 77.4958575,
-          "weight": 128.0
+          "lat": 13.0006324,
+          "lon": 77.4982464,
+          "weight": 80.0
         },
         {
-          "sequence": 14,
+          "sequence": 11,
+          "job_id": "7993",
+          "name": "SRI REVANNA SIDDESHWARA WHOLESALE TRADERS -2",
+          "area_id": "5089",
+          "lat": 12.9964909,
+          "lon": 77.4991257,
+          "weight": 325.58
+        },
+        {
+          "sequence": 12,
           "job_id": "6836",
           "name": "Easy buy super Mart",
           "area_id": "5089",
@@ -2239,7 +2176,7 @@
           "weight": 40.6
         },
         {
-          "sequence": 15,
+          "sequence": 13,
           "job_id": "6093",
           "name": "Sri Adibhyraveshwara rice traders",
           "area_id": "5089",
@@ -2248,7 +2185,7 @@
           "weight": 184.0
         },
         {
-          "sequence": 16,
+          "sequence": 14,
           "job_id": "7869",
           "name": "sri  Venkateshwara Bakery and sweets",
           "area_id": "5089",
@@ -2257,7 +2194,7 @@
           "weight": 140.0
         },
         {
-          "sequence": 17,
+          "sequence": 15,
           "job_id": "5490",
           "name": "Hanuman provision store",
           "area_id": "5089",
@@ -2266,7 +2203,7 @@
           "weight": 236.9
         },
         {
-          "sequence": 18,
+          "sequence": 16,
           "job_id": "10388",
           "name": "Sri manjunatha provisions store",
           "area_id": "5089",
@@ -2275,7 +2212,7 @@
           "weight": 245.88
         },
         {
-          "sequence": 19,
+          "sequence": 17,
           "job_id": "5127",
           "name": "Ashwini provision store",
           "area_id": "5089",
@@ -2284,7 +2221,16 @@
           "weight": 154.0
         },
         {
-          "sequence": 20,
+          "sequence": 18,
+          "job_id": "9128",
+          "name": "Ambika provision store",
+          "area_id": "5089",
+          "lat": 13.025426301914976,
+          "lon": 77.47222378849983,
+          "weight": 90.0
+        },
+        {
+          "sequence": 19,
           "job_id": "8079",
           "name": "Nandi provision store",
           "area_id": "5089",
@@ -2293,21 +2239,173 @@
           "weight": 83.52
         },
         {
-          "sequence": 21,
-          "job_id": "9128",
-          "name": "Ambika provision store",
+          "sequence": 20,
+          "job_id": "5999",
+          "name": "Ramdev Provision  Stores",
           "area_id": "5089",
-          "lat": 13.025426301914976,
-          "lon": 77.47222378849983,
-          "weight": 90.0
+          "lat": 13.0228992,
+          "lon": 77.4578275,
+          "weight": 260.0
         }
       ]
     },
     {
       "vehicle_id": 18,
-      "distance_km": 20.85,
-      "load_kg": 2778.8,
-      "stop_count": 18,
+      "distance_km": 25.15,
+      "load_kg": 3090.77,
+      "stop_count": 16,
+      "stops": [
+        {
+          "sequence": 1,
+          "job_id": "6776",
+          "name": "Sri Basaweshra rice corner",
+          "area_id": "5075",
+          "lat": 13.065835753603483,
+          "lon": 77.50342190265656,
+          "weight": 400.0
+        },
+        {
+          "sequence": 2,
+          "job_id": "7058",
+          "name": "Byraweshwara Provision Store",
+          "area_id": "5075",
+          "lat": 13.0723511,
+          "lon": 77.505353,
+          "weight": 108.06
+        },
+        {
+          "sequence": 3,
+          "job_id": "7115",
+          "name": "Nanjundeshwara Rice traders",
+          "area_id": "5075",
+          "lat": 13.0782768,
+          "lon": 77.4973821,
+          "weight": 136.0
+        },
+        {
+          "sequence": 4,
+          "job_id": "6842",
+          "name": "Rudreshwara Pravision Store",
+          "area_id": "5075",
+          "lat": 13.0813157,
+          "lon": 77.5008096,
+          "weight": 120.0
+        },
+        {
+          "sequence": 5,
+          "job_id": "7112",
+          "name": "Sree Raghavendra Bhavan",
+          "area_id": "5075",
+          "lat": 13.080324113020575,
+          "lon": 77.50262327492237,
+          "weight": 230.0
+        },
+        {
+          "sequence": 6,
+          "job_id": "6963",
+          "name": "PV Wholesale",
+          "area_id": "5075",
+          "lat": 13.080266,
+          "lon": 77.5044862,
+          "weight": 126.0
+        },
+        {
+          "sequence": 7,
+          "job_id": "7000",
+          "name": "Sree Kaveri Provision Store",
+          "area_id": "5075",
+          "lat": 13.089670895200975,
+          "lon": 77.50102635473013,
+          "weight": 332.0
+        },
+        {
+          "sequence": 8,
+          "job_id": "6891",
+          "name": "Kamadhenu super bazar",
+          "area_id": "5075",
+          "lat": 13.09037300805637,
+          "lon": 77.48805955052376,
+          "weight": 80.0
+        },
+        {
+          "sequence": 9,
+          "job_id": "9585",
+          "name": "Mahalakshmi Traders",
+          "area_id": "5075",
+          "lat": 13.0912101,
+          "lon": 77.4883162,
+          "weight": 210.0
+        },
+        {
+          "sequence": 10,
+          "job_id": "9964",
+          "name": "KAVERY ORIVISION STORE",
+          "area_id": "5075",
+          "lat": 13.096840842875334,
+          "lon": 77.49060664325953,
+          "weight": 436.0
+        },
+        {
+          "sequence": 11,
+          "job_id": "7386",
+          "name": "Surya Super Market",
+          "area_id": "5075",
+          "lat": 13.10143542997841,
+          "lon": 77.48122796416283,
+          "weight": 286.0
+        },
+        {
+          "sequence": 12,
+          "job_id": "7816",
+          "name": "Lucky Super Mart",
+          "area_id": "5075",
+          "lat": 13.075458394797538,
+          "lon": 77.47355751693249,
+          "weight": 61.35
+        },
+        {
+          "sequence": 13,
+          "job_id": "6753",
+          "name": "Kamadhenu super market",
+          "area_id": "5075",
+          "lat": 13.0677292,
+          "lon": 77.4842153,
+          "weight": 65.36
+        },
+        {
+          "sequence": 14,
+          "job_id": "6944",
+          "name": "Nitya Stores",
+          "area_id": "5075",
+          "lat": 13.0656367,
+          "lon": 77.4940872,
+          "weight": 102.0
+        },
+        {
+          "sequence": 15,
+          "job_id": "9159",
+          "name": "Ganapathi provision store",
+          "area_id": "5075",
+          "lat": 13.065209668002371,
+          "lon": 77.49622855335474,
+          "weight": 338.0
+        },
+        {
+          "sequence": 16,
+          "job_id": "6018",
+          "name": "NT store 2",
+          "area_id": "5075",
+          "lat": 13.0625368,
+          "lon": 77.4954701,
+          "weight": 60.0
+        }
+      ]
+    },
+    {
+      "vehicle_id": 19,
+      "distance_km": 20.74,
+      "load_kg": 2627.3,
+      "stop_count": 17,
       "stops": [
         {
           "sequence": 1,
@@ -2320,33 +2418,6 @@
         },
         {
           "sequence": 2,
-          "job_id": "7766",
-          "name": "SRI VENKATESWARA PROVISION STORE AND RICE",
-          "area_id": "5087",
-          "lat": 12.9700897,
-          "lon": 77.5599521,
-          "weight": 154.0
-        },
-        {
-          "sequence": 3,
-          "job_id": "7457",
-          "name": "Narayana provision Store",
-          "area_id": "5087",
-          "lat": 12.9676356,
-          "lon": 77.5604076,
-          "weight": 156.0
-        },
-        {
-          "sequence": 4,
-          "job_id": "9921",
-          "name": "kc store",
-          "area_id": "5087",
-          "lat": 12.963421781741816,
-          "lon": 77.55635563284159,
-          "weight": 130.0
-        },
-        {
-          "sequence": 5,
           "job_id": "9233",
           "name": "F F STORE",
           "area_id": "5087",
@@ -2355,7 +2426,16 @@
           "weight": 201.0
         },
         {
-          "sequence": 6,
+          "sequence": 3,
+          "job_id": "9921",
+          "name": "kc store",
+          "area_id": "5087",
+          "lat": 12.963421781741816,
+          "lon": 77.55635563284159,
+          "weight": 130.0
+        },
+        {
+          "sequence": 4,
           "job_id": "9214",
           "name": "New Dhanalakshmi store",
           "area_id": "5087",
@@ -2364,7 +2444,7 @@
           "weight": 158.8
         },
         {
-          "sequence": 7,
+          "sequence": 5,
           "job_id": "8411",
           "name": "GANESH TRADERS",
           "area_id": "5087",
@@ -2373,7 +2453,7 @@
           "weight": 138.0
         },
         {
-          "sequence": 8,
+          "sequence": 6,
           "job_id": "8585",
           "name": "Bereswara Provision Store",
           "area_id": "5087",
@@ -2382,7 +2462,7 @@
           "weight": 104.0
         },
         {
-          "sequence": 9,
+          "sequence": 7,
           "job_id": "9610",
           "name": "sri male Madhadesvar provision stores",
           "area_id": "5087",
@@ -2391,16 +2471,16 @@
           "weight": 236.0
         },
         {
-          "sequence": 10,
+          "sequence": 8,
           "job_id": "7232",
           "name": "Saleem Beauty Store",
-          "area_id": "5087",
+          "area_id": "5088",
           "lat": 12.9562881,
           "lon": 77.5464271,
           "weight": 228.0
         },
         {
-          "sequence": 11,
+          "sequence": 9,
           "job_id": "6918",
           "name": "Lakshmi Venkateshwar Pravision Store",
           "area_id": "5082",
@@ -2409,7 +2489,7 @@
           "weight": 130.0
         },
         {
-          "sequence": 12,
+          "sequence": 10,
           "job_id": "6899",
           "name": "Sri Sai Upahar",
           "area_id": "5082",
@@ -2418,7 +2498,7 @@
           "weight": 104.0
         },
         {
-          "sequence": 13,
+          "sequence": 11,
           "job_id": "7165",
           "name": "Saleena Stores",
           "area_id": "5087",
@@ -2427,7 +2507,7 @@
           "weight": 104.0
         },
         {
-          "sequence": 14,
+          "sequence": 12,
           "job_id": "8040",
           "name": "Shivanna Angadi",
           "area_id": "5087",
@@ -2436,7 +2516,7 @@
           "weight": 130.0
         },
         {
-          "sequence": 15,
+          "sequence": 13,
           "job_id": "7904",
           "name": "K N GOWDRU PROVISION STORE",
           "area_id": "5087",
@@ -2445,16 +2525,7 @@
           "weight": 274.0
         },
         {
-          "sequence": 16,
-          "job_id": "8286",
-          "name": "SRI SUDARHSAN TRADERS",
-          "area_id": "5087",
-          "lat": 12.94034271435201,
-          "lon": 77.56017744541168,
-          "weight": 180.0
-        },
-        {
-          "sequence": 17,
+          "sequence": 14,
           "job_id": "8025",
           "name": "GMMK PROVISION STORE",
           "area_id": "5087",
@@ -2463,182 +2534,39 @@
           "weight": 130.0
         },
         {
-          "sequence": 18,
-          "job_id": "9582",
-          "name": "kenz mini mart",
-          "area_id": "5087",
-          "lat": 12.9427021,
-          "lon": 77.5929462,
-          "weight": 130.0
-        }
-      ]
-    },
-    {
-      "vehicle_id": 19,
-      "distance_km": 24.84,
-      "load_kg": 2989.42,
-      "stop_count": 17,
-      "stops": [
-        {
-          "sequence": 1,
-          "job_id": "5611",
-          "name": "N.T stores",
-          "area_id": "5075",
-          "lat": 13.0415232,
-          "lon": 77.5155216,
-          "weight": 152.0
-        },
-        {
-          "sequence": 2,
-          "job_id": "6513",
-          "name": "srinivas traders",
-          "area_id": "5075",
-          "lat": 13.071579,
-          "lon": 77.525762,
-          "weight": 200.0
-        },
-        {
-          "sequence": 3,
-          "job_id": "7114",
-          "name": "Amber Hot Dum Biryani",
-          "area_id": "5075",
-          "lat": 13.07178854973366,
-          "lon": 77.51111313700676,
-          "weight": 160.0
-        },
-        {
-          "sequence": 4,
-          "job_id": "7058",
-          "name": "Byraweshwara Provision Store",
-          "area_id": "5075",
-          "lat": 13.0723511,
-          "lon": 77.505353,
-          "weight": 108.06
-        },
-        {
-          "sequence": 5,
-          "job_id": "9159",
-          "name": "Ganapathi provision store",
-          "area_id": "5075",
-          "lat": 13.065209668002371,
-          "lon": 77.49622855335474,
-          "weight": 338.0
-        },
-        {
-          "sequence": 6,
-          "job_id": "6018",
-          "name": "NT store 2",
-          "area_id": "5075",
-          "lat": 13.0625368,
-          "lon": 77.4954701,
-          "weight": 60.0
-        },
-        {
-          "sequence": 7,
-          "job_id": "6944",
-          "name": "Nitya Stores",
-          "area_id": "5075",
-          "lat": 13.0656367,
-          "lon": 77.4940872,
-          "weight": 102.0
-        },
-        {
-          "sequence": 8,
-          "job_id": "6753",
-          "name": "Kamadhenu super market",
-          "area_id": "5075",
-          "lat": 13.0677292,
-          "lon": 77.4842153,
-          "weight": 65.36
-        },
-        {
-          "sequence": 9,
-          "job_id": "7115",
-          "name": "Nanjundeshwara Rice traders",
-          "area_id": "5075",
-          "lat": 13.0782768,
-          "lon": 77.4973821,
-          "weight": 136.0
-        },
-        {
-          "sequence": 10,
-          "job_id": "6963",
-          "name": "PV Wholesale",
-          "area_id": "5075",
-          "lat": 13.080266,
-          "lon": 77.5044862,
-          "weight": 126.0
-        },
-        {
-          "sequence": 11,
-          "job_id": "7112",
-          "name": "Sree Raghavendra Bhavan",
-          "area_id": "5075",
-          "lat": 13.080324113020575,
-          "lon": 77.50262327492237,
-          "weight": 230.0
-        },
-        {
-          "sequence": 12,
-          "job_id": "6842",
-          "name": "Rudreshwara Pravision Store",
-          "area_id": "5075",
-          "lat": 13.0813157,
-          "lon": 77.5008096,
-          "weight": 120.0
-        },
-        {
-          "sequence": 13,
-          "job_id": "6891",
-          "name": "Kamadhenu super bazar",
-          "area_id": "5075",
-          "lat": 13.09037300805637,
-          "lon": 77.48805955052376,
-          "weight": 80.0
-        },
-        {
-          "sequence": 14,
-          "job_id": "9585",
-          "name": "Mahalakshmi Traders",
-          "area_id": "5075",
-          "lat": 13.0912101,
-          "lon": 77.4883162,
-          "weight": 210.0
-        },
-        {
           "sequence": 15,
-          "job_id": "9964",
-          "name": "KAVERY ORIVISION STORE",
-          "area_id": "5075",
-          "lat": 13.096840842875334,
-          "lon": 77.49060664325953,
-          "weight": 436.0
+          "job_id": "8286",
+          "name": "SRI SUDARHSAN TRADERS",
+          "area_id": "5087",
+          "lat": 12.94034271435201,
+          "lon": 77.56017744541168,
+          "weight": 180.0
         },
         {
           "sequence": 16,
-          "job_id": "7386",
-          "name": "Surya Super Market",
-          "area_id": "5075",
-          "lat": 13.10143542997841,
-          "lon": 77.48122796416283,
-          "weight": 286.0
+          "job_id": "9332",
+          "name": "BALAJI RICE CORNER",
+          "area_id": "5087",
+          "lat": 12.9313528,
+          "lon": 77.5725474,
+          "weight": 24.5
         },
         {
           "sequence": 17,
-          "job_id": "7765",
-          "name": "Shivshakti Super Market",
-          "area_id": "5075",
-          "lat": 13.104161119275014,
-          "lon": 77.48228274285793,
-          "weight": 180.0
+          "job_id": "9355",
+          "name": "swagath departmental store",
+          "area_id": "5082",
+          "lat": 12.9200766,
+          "lon": 77.5707412,
+          "weight": 264.0
         }
       ]
     },
     {
       "vehicle_id": 20,
-      "distance_km": 32.51,
-      "load_kg": 2821.67,
-      "stop_count": 18,
+      "distance_km": 35.76,
+      "load_kg": 2890.87,
+      "stop_count": 23,
       "stops": [
         {
           "sequence": 1,
@@ -2651,6 +2579,51 @@
         },
         {
           "sequence": 2,
+          "job_id": "6804",
+          "name": "Mathaji Department store",
+          "area_id": "5084",
+          "lat": 13.0786483,
+          "lon": 77.5616918,
+          "weight": 53.370000000000005
+        },
+        {
+          "sequence": 3,
+          "job_id": "7261",
+          "name": "Jai Ganesh Provision Store",
+          "area_id": "5084",
+          "lat": 13.0792714,
+          "lon": 77.5600217,
+          "weight": 120.0
+        },
+        {
+          "sequence": 4,
+          "job_id": "7814",
+          "name": "SRI RAGAVENDRA IYENGAR CAKE HOUSE",
+          "area_id": "5084",
+          "lat": 13.0936755,
+          "lon": 77.5500803,
+          "weight": 29.619999999999997
+        },
+        {
+          "sequence": 5,
+          "job_id": "6701",
+          "name": "Buy N Save",
+          "area_id": "5084",
+          "lat": 13.093337,
+          "lon": 77.547433,
+          "weight": 36.9
+        },
+        {
+          "sequence": 6,
+          "job_id": "6709",
+          "name": "CHAYAPUTHARA GENERAL STORE",
+          "area_id": "5084",
+          "lat": 13.097639,
+          "lon": 77.54295,
+          "weight": 38.61
+        },
+        {
+          "sequence": 7,
           "job_id": "6761",
           "name": "Sri Durga Provision store",
           "area_id": "5084",
@@ -2659,7 +2632,7 @@
           "weight": 152.96
         },
         {
-          "sequence": 3,
+          "sequence": 8,
           "job_id": "7587",
           "name": "Sri SLV Mart",
           "area_id": "5084",
@@ -2668,7 +2641,7 @@
           "weight": 89.45
         },
         {
-          "sequence": 4,
+          "sequence": 9,
           "job_id": "7308",
           "name": "SRI LAKSHMI VENKATESWARA PROVISION STORE",
           "area_id": "5084",
@@ -2677,7 +2650,7 @@
           "weight": 38.4
         },
         {
-          "sequence": 5,
+          "sequence": 10,
           "job_id": "8243",
           "name": "rakesh rice traders",
           "area_id": "5084",
@@ -2686,7 +2659,7 @@
           "weight": 100.0
         },
         {
-          "sequence": 6,
+          "sequence": 11,
           "job_id": "9348",
           "name": "vishnu provision store",
           "area_id": "5084",
@@ -2695,7 +2668,7 @@
           "weight": 62.4
         },
         {
-          "sequence": 7,
+          "sequence": 12,
           "job_id": "7402",
           "name": "Kaveri department store",
           "area_id": "5084",
@@ -2704,7 +2677,7 @@
           "weight": 780.0
         },
         {
-          "sequence": 8,
+          "sequence": 13,
           "job_id": "7357",
           "name": "krishna rice traders",
           "area_id": "5084",
@@ -2713,7 +2686,7 @@
           "weight": 115.96
         },
         {
-          "sequence": 9,
+          "sequence": 14,
           "job_id": "9699",
           "name": "P PATHAANJALI STORE",
           "area_id": "5084",
@@ -2722,7 +2695,7 @@
           "weight": 156.0
         },
         {
-          "sequence": 10,
+          "sequence": 15,
           "job_id": "9883",
           "name": "CHIKAPETE DONNE BIRYANI ADDA",
           "area_id": "5084",
@@ -2731,7 +2704,7 @@
           "weight": 40.0
         },
         {
-          "sequence": 11,
+          "sequence": 16,
           "job_id": "9718",
           "name": "Madhuri provision store",
           "area_id": "5084",
@@ -2740,7 +2713,7 @@
           "weight": 44.71999999999999
         },
         {
-          "sequence": 12,
+          "sequence": 17,
           "job_id": "9721",
           "name": "SRI SAPTAMATHRUKA PROVISION STORE",
           "area_id": "5084",
@@ -2749,7 +2722,7 @@
           "weight": 112.97
         },
         {
-          "sequence": 13,
+          "sequence": 18,
           "job_id": "10117",
           "name": "Vihaan Mart",
           "area_id": "5084",
@@ -2758,25 +2731,7 @@
           "weight": 364.0
         },
         {
-          "sequence": 14,
-          "job_id": "7426",
-          "name": "CHANDRA PROVISION STORE",
-          "area_id": "5084",
-          "lat": 13.1106062,
-          "lon": 77.5912914,
-          "weight": 234.0
-        },
-        {
-          "sequence": 15,
-          "job_id": "9970",
-          "name": "sujatha tiffin center",
-          "area_id": "5084",
-          "lat": 13.109824003931601,
-          "lon": 77.59156465530396,
-          "weight": 82.0
-        },
-        {
-          "sequence": 16,
+          "sequence": 19,
           "job_id": "7454",
           "name": "sri chowdeshwari corner store",
           "area_id": "5084",
@@ -2785,7 +2740,25 @@
           "weight": 76.0
         },
         {
-          "sequence": 17,
+          "sequence": 20,
+          "job_id": "7347",
+          "name": "kavyashree rice traders",
+          "area_id": "5084",
+          "lat": 13.1023908,
+          "lon": 77.5949147,
+          "weight": 54.9
+        },
+        {
+          "sequence": 21,
+          "job_id": "10819",
+          "name": "BRAHMA CHAITANYA STORES",
+          "area_id": "5084",
+          "lat": 13.1018141,
+          "lon": 77.5957036,
+          "weight": 51.8
+        },
+        {
+          "sequence": 22,
           "job_id": "8191",
           "name": "NM DEPARTMENTAL STORE",
           "area_id": "5084",
@@ -2794,7 +2767,7 @@
           "weight": 115.0
         },
         {
-          "sequence": 18,
+          "sequence": 23,
           "job_id": "8351",
           "name": "ISHWAR PROVISION STORE",
           "area_id": "5084",
@@ -2806,9 +2779,9 @@
     },
     {
       "vehicle_id": 21,
-      "distance_km": 27.08,
-      "load_kg": 2680.87,
-      "stop_count": 15,
+      "distance_km": 34.37,
+      "load_kg": 2885.5,
+      "stop_count": 18,
       "stops": [
         {
           "sequence": 1,
@@ -2839,15 +2812,6 @@
         },
         {
           "sequence": 4,
-          "job_id": "6354",
-          "name": "Bhyraveshwara Rice Traders",
-          "area_id": "5086",
-          "lat": 13.050873,
-          "lon": 77.567882,
-          "weight": 464.0
-        },
-        {
-          "sequence": 5,
           "job_id": "9362",
           "name": "Ashritha enterprises",
           "area_id": "5086",
@@ -2856,7 +2820,7 @@
           "weight": 279.0
         },
         {
-          "sequence": 6,
+          "sequence": 5,
           "job_id": "7502",
           "name": "vinod store",
           "area_id": "5086",
@@ -2865,7 +2829,7 @@
           "weight": 91.07000000000001
         },
         {
-          "sequence": 7,
+          "sequence": 6,
           "job_id": "7479",
           "name": "SHREYAS ENTERPRISES",
           "area_id": "5086",
@@ -2874,7 +2838,7 @@
           "weight": 81.39999999999999
         },
         {
-          "sequence": 8,
+          "sequence": 7,
           "job_id": "7477",
           "name": "Sri  Venkateswara Provision Stores",
           "area_id": "5086",
@@ -2883,7 +2847,7 @@
           "weight": 155.10000000000002
         },
         {
-          "sequence": 9,
+          "sequence": 8,
           "job_id": "9377",
           "name": "PAWAN PROVISION STORES",
           "area_id": "5086",
@@ -2892,7 +2856,25 @@
           "weight": 280.0
         },
         {
+          "sequence": 9,
+          "job_id": "6993",
+          "name": "Byraveshwara Rice Traders",
+          "area_id": "5086",
+          "lat": 13.0707972,
+          "lon": 77.565613,
+          "weight": 348.0
+        },
+        {
           "sequence": 10,
+          "job_id": "10406",
+          "name": "MAHESHWARI RICE TRADERS",
+          "area_id": "5084",
+          "lat": 13.0760834,
+          "lon": 77.5574445,
+          "weight": 36.0
+        },
+        {
+          "sequence": 11,
           "job_id": "6808",
           "name": "Pooja department store",
           "area_id": "5086",
@@ -2901,22 +2883,13 @@
           "weight": 287.0
         },
         {
-          "sequence": 11,
-          "job_id": "6804",
-          "name": "Mathaji Department store",
-          "area_id": "5084",
-          "lat": 13.0786483,
-          "lon": 77.5616918,
-          "weight": 53.370000000000005
-        },
-        {
           "sequence": 12,
-          "job_id": "7261",
-          "name": "Jai Ganesh Provision Store",
-          "area_id": "5084",
-          "lat": 13.0792714,
-          "lon": 77.5600217,
-          "weight": 120.0
+          "job_id": "9298",
+          "name": "N P STORE",
+          "area_id": "5086",
+          "lat": 13.0822025,
+          "lon": 77.5467204,
+          "weight": 55.0
         },
         {
           "sequence": 13,
@@ -2944,35 +2917,44 @@
           "lat": 13.1066051,
           "lon": 77.4900012,
           "weight": 260.0
+        },
+        {
+          "sequence": 16,
+          "job_id": "7765",
+          "name": "Shivshakti Super Market",
+          "area_id": "5075",
+          "lat": 13.104161119275014,
+          "lon": 77.48228274285793,
+          "weight": 180.0
+        },
+        {
+          "sequence": 17,
+          "job_id": "8387",
+          "name": "excellent provision store",
+          "area_id": "5086",
+          "lat": 13.1385638,
+          "lon": 77.4780646,
+          "weight": 103.0
+        },
+        {
+          "sequence": 18,
+          "job_id": "10738",
+          "name": "Shri Mahadev Super Bazar",
+          "area_id": "5075",
+          "lat": 13.1384152,
+          "lon": 77.4741277,
+          "weight": 120.0
         }
       ]
     },
     {
       "vehicle_id": 22,
-      "distance_km": 31.42,
-      "load_kg": 2973.61,
-      "stop_count": 11,
+      "distance_km": 29.89,
+      "load_kg": 2929.61,
+      "stop_count": 10,
       "stops": [
         {
           "sequence": 1,
-          "job_id": "6576",
-          "name": "Revannasiddeshwara provision store",
-          "area_id": "5083",
-          "lat": 13.040315,
-          "lon": 77.504731,
-          "weight": 182.0
-        },
-        {
-          "sequence": 2,
-          "job_id": "8052",
-          "name": "Kalpavruksha Rice trader",
-          "area_id": "5083",
-          "lat": 13.027899026434142,
-          "lon": 77.49208487570286,
-          "weight": 70.0
-        },
-        {
-          "sequence": 3,
           "job_id": "5701",
           "name": "Ranganatha swamy traders",
           "area_id": "5083",
@@ -2981,7 +2963,16 @@
           "weight": 1746.9
         },
         {
-          "sequence": 4,
+          "sequence": 2,
+          "job_id": "6711",
+          "name": "A M Store",
+          "area_id": "5083",
+          "lat": 13.052655941149709,
+          "lon": 77.49362614005804,
+          "weight": 208.0
+        },
+        {
+          "sequence": 3,
           "job_id": "6666",
           "name": "Suresh Provision store",
           "area_id": "5083",
@@ -2990,7 +2981,7 @@
           "weight": 61.2
         },
         {
-          "sequence": 5,
+          "sequence": 4,
           "job_id": "10958",
           "name": "Tharun provisions store",
           "area_id": "5083",
@@ -2999,7 +2990,7 @@
           "weight": 5.51
         },
         {
-          "sequence": 6,
+          "sequence": 5,
           "job_id": "10963",
           "name": "Sri maruthi provision store",
           "area_id": "5083",
@@ -3008,7 +2999,7 @@
           "weight": 60.0
         },
         {
-          "sequence": 7,
+          "sequence": 6,
           "job_id": "10881",
           "name": "mathaji wholsale",
           "area_id": "5083",
@@ -3017,7 +3008,7 @@
           "weight": 316.0
         },
         {
-          "sequence": 8,
+          "sequence": 7,
           "job_id": "8508",
           "name": "samaya traders",
           "area_id": "5083",
@@ -3026,7 +3017,7 @@
           "weight": 130.0
         },
         {
-          "sequence": 9,
+          "sequence": 8,
           "job_id": "8316",
           "name": "SB SUPER MARKET",
           "area_id": "5083",
@@ -3035,7 +3026,7 @@
           "weight": 80.0
         },
         {
-          "sequence": 10,
+          "sequence": 9,
           "job_id": "10531",
           "name": "sri Ragavendra provision store",
           "area_id": "5083",
@@ -3044,7 +3035,7 @@
           "weight": 186.0
         },
         {
-          "sequence": 11,
+          "sequence": 10,
           "job_id": "10544",
           "name": "SM provison store",
           "area_id": "5083",
@@ -3056,129 +3047,12 @@
     },
     {
       "vehicle_id": 23,
-      "distance_km": 20.99,
-      "load_kg": 2918.0,
-      "stop_count": 16,
+      "distance_km": 18.58,
+      "load_kg": 2942.0,
+      "stop_count": 15,
       "stops": [
         {
           "sequence": 1,
-          "job_id": "5833",
-          "name": "Srinivasa traders",
-          "area_id": "5081",
-          "lat": 13.0104362,
-          "lon": 77.524028,
-          "weight": 290.0
-        },
-        {
-          "sequence": 2,
-          "job_id": "5574",
-          "name": "sri byraweshwara Stores",
-          "area_id": "5089",
-          "lat": 13.0059902,
-          "lon": 77.5052107,
-          "weight": 260.0
-        },
-        {
-          "sequence": 3,
-          "job_id": "9649",
-          "name": "Sri Manjunath Udupi Veg",
-          "area_id": "5089",
-          "lat": 12.9922721,
-          "lon": 77.5054772,
-          "weight": 76.0
-        },
-        {
-          "sequence": 4,
-          "job_id": "5179",
-          "name": "Shri Chowdeshwari pravision Store",
-          "area_id": "5081",
-          "lat": 12.9869941,
-          "lon": 77.5181521,
-          "weight": 260.0
-        },
-        {
-          "sequence": 5,
-          "job_id": "5581",
-          "name": "jagannath store",
-          "area_id": "5081",
-          "lat": 12.9858262,
-          "lon": 77.5238204,
-          "weight": 254.0
-        },
-        {
-          "sequence": 6,
-          "job_id": "5586",
-          "name": "p.k. general store",
-          "area_id": "5081",
-          "lat": 12.9863868,
-          "lon": 77.5251299,
-          "weight": 260.0
-        },
-        {
-          "sequence": 7,
-          "job_id": "6490",
-          "name": "rajendra provision store",
-          "area_id": "5081",
-          "lat": 12.980344,
-          "lon": 77.525352,
-          "weight": 112.0
-        },
-        {
-          "sequence": 8,
-          "job_id": "9506",
-          "name": "KRISHNA PROVISION STORE",
-          "area_id": "5081",
-          "lat": 12.9832521,
-          "lon": 77.5281259,
-          "weight": 338.0
-        },
-        {
-          "sequence": 9,
-          "job_id": "5681",
-          "name": "nithin provision store",
-          "area_id": "5081",
-          "lat": 12.9861449,
-          "lon": 77.5309157,
-          "weight": 152.0
-        },
-        {
-          "sequence": 10,
-          "job_id": "6083",
-          "name": "V R Mart",
-          "area_id": "5081",
-          "lat": 12.9920683,
-          "lon": 77.53531,
-          "weight": 60.0
-        },
-        {
-          "sequence": 11,
-          "job_id": "5913",
-          "name": "Jai ganesh rice & general store",
-          "area_id": "5081",
-          "lat": 13.0014093,
-          "lon": 77.5328684,
-          "weight": 70.0
-        },
-        {
-          "sequence": 12,
-          "job_id": "5904",
-          "name": "Pooja provision store",
-          "area_id": "5081",
-          "lat": 13.0029482,
-          "lon": 77.5359627,
-          "weight": 180.0
-        },
-        {
-          "sequence": 13,
-          "job_id": "9486",
-          "name": "Varahi super mart",
-          "area_id": "5081",
-          "lat": 12.9986679,
-          "lon": 77.5394502,
-          "weight": 330.0
-        },
-        {
-          "sequence": 14,
           "job_id": "9532",
           "name": "Sri Sai Krishna Traders",
           "area_id": "5081",
@@ -3187,7 +3061,7 @@
           "weight": 128.0
         },
         {
-          "sequence": 15,
+          "sequence": 2,
           "job_id": "10770",
           "name": "S R  General Store",
           "area_id": "5081",
@@ -3196,21 +3070,129 @@
           "weight": 50.0
         },
         {
-          "sequence": 16,
-          "job_id": "7598",
-          "name": "NEW M C M Store",
-          "area_id": "5085",
-          "lat": 12.9853913,
-          "lon": 77.5679511,
-          "weight": 98.0
+          "sequence": 3,
+          "job_id": "7544",
+          "name": "Nandini Stores",
+          "area_id": "5081",
+          "lat": 12.989519366432251,
+          "lon": 77.56086811423302,
+          "weight": 342.0
+        },
+        {
+          "sequence": 4,
+          "job_id": "9933",
+          "name": "BHUVANESHWARI Traders",
+          "area_id": "5081",
+          "lat": 12.975596,
+          "lon": 77.536949,
+          "weight": 116.0
+        },
+        {
+          "sequence": 5,
+          "job_id": "6490",
+          "name": "rajendra provision store",
+          "area_id": "5081",
+          "lat": 12.980344,
+          "lon": 77.525352,
+          "weight": 112.0
+        },
+        {
+          "sequence": 6,
+          "job_id": "5179",
+          "name": "Shri Chowdeshwari pravision Store",
+          "area_id": "5081",
+          "lat": 12.9869941,
+          "lon": 77.5181521,
+          "weight": 260.0
+        },
+        {
+          "sequence": 7,
+          "job_id": "5581",
+          "name": "jagannath store",
+          "area_id": "5081",
+          "lat": 12.9858262,
+          "lon": 77.5238204,
+          "weight": 254.0
+        },
+        {
+          "sequence": 8,
+          "job_id": "5586",
+          "name": "p.k. general store",
+          "area_id": "5081",
+          "lat": 12.9863868,
+          "lon": 77.5251299,
+          "weight": 260.0
+        },
+        {
+          "sequence": 9,
+          "job_id": "9506",
+          "name": "KRISHNA PROVISION STORE",
+          "area_id": "5081",
+          "lat": 12.9832521,
+          "lon": 77.5281259,
+          "weight": 338.0
+        },
+        {
+          "sequence": 10,
+          "job_id": "5681",
+          "name": "nithin provision store",
+          "area_id": "5081",
+          "lat": 12.9861449,
+          "lon": 77.5309157,
+          "weight": 152.0
+        },
+        {
+          "sequence": 11,
+          "job_id": "6083",
+          "name": "V R Mart",
+          "area_id": "5081",
+          "lat": 12.9920683,
+          "lon": 77.53531,
+          "weight": 60.0
+        },
+        {
+          "sequence": 12,
+          "job_id": "9486",
+          "name": "Varahi super mart",
+          "area_id": "5081",
+          "lat": 12.9986679,
+          "lon": 77.5394502,
+          "weight": 330.0
+        },
+        {
+          "sequence": 13,
+          "job_id": "5904",
+          "name": "Pooja provision store",
+          "area_id": "5081",
+          "lat": 13.0029482,
+          "lon": 77.5359627,
+          "weight": 180.0
+        },
+        {
+          "sequence": 14,
+          "job_id": "5913",
+          "name": "Jai ganesh rice & general store",
+          "area_id": "5081",
+          "lat": 13.0014093,
+          "lon": 77.5328684,
+          "weight": 70.0
+        },
+        {
+          "sequence": 15,
+          "job_id": "5833",
+          "name": "Srinivasa traders",
+          "area_id": "5081",
+          "lat": 13.0104362,
+          "lon": 77.524028,
+          "weight": 290.0
         }
       ]
     },
     {
       "vehicle_id": 24,
-      "distance_km": 31.84,
-      "load_kg": 2813.87,
-      "stop_count": 20,
+      "distance_km": 32.19,
+      "load_kg": 2782.43,
+      "stop_count": 21,
       "stops": [
         {
           "sequence": 1,
@@ -3250,6 +3232,15 @@
         },
         {
           "sequence": 5,
+          "job_id": "7057",
+          "name": "SRI DEVI PROVISION STORE",
+          "area_id": "5079",
+          "lat": 12.9391879,
+          "lon": 77.5313945,
+          "weight": 82.55999999999999
+        },
+        {
+          "sequence": 6,
           "job_id": "7223",
           "name": "SRI VINAYAKA PROVISION STORE",
           "area_id": "5082",
@@ -3258,7 +3249,7 @@
           "weight": 156.53
         },
         {
-          "sequence": 6,
+          "sequence": 7,
           "job_id": "10641",
           "name": "Mahaveer provision store",
           "area_id": "5082",
@@ -3267,7 +3258,7 @@
           "weight": 44.44
         },
         {
-          "sequence": 7,
+          "sequence": 8,
           "job_id": "8406",
           "name": "S.L.N Rice Traders",
           "area_id": "5082",
@@ -3276,7 +3267,7 @@
           "weight": 100.0
         },
         {
-          "sequence": 8,
+          "sequence": 9,
           "job_id": "7751",
           "name": "S S Mart",
           "area_id": "5082",
@@ -3285,7 +3276,7 @@
           "weight": 131.5
         },
         {
-          "sequence": 9,
+          "sequence": 10,
           "job_id": "7887",
           "name": "Siddeshwara Store",
           "area_id": "5082",
@@ -3294,7 +3285,7 @@
           "weight": 102.0
         },
         {
-          "sequence": 10,
+          "sequence": 11,
           "job_id": "8970",
           "name": "Sri Ranganatha Store",
           "area_id": "5082",
@@ -3303,7 +3294,7 @@
           "weight": 146.2
         },
         {
-          "sequence": 11,
+          "sequence": 12,
           "job_id": "9482",
           "name": "sannidhi provision store",
           "area_id": "5082",
@@ -3312,7 +3303,7 @@
           "weight": 50.4
         },
         {
-          "sequence": 12,
+          "sequence": 13,
           "job_id": "9526",
           "name": "Sri Mahadeshwara provision store",
           "area_id": "5082",
@@ -3321,7 +3312,7 @@
           "weight": 108.8
         },
         {
-          "sequence": 13,
+          "sequence": 14,
           "job_id": "9365",
           "name": "MRK General and Home Needs",
           "area_id": "5082",
@@ -3330,7 +3321,7 @@
           "weight": 130.0
         },
         {
-          "sequence": 14,
+          "sequence": 15,
           "job_id": "8442",
           "name": "DEEPAK PROVISION STORE",
           "area_id": "5082",
@@ -3339,7 +3330,7 @@
           "weight": 160.0
         },
         {
-          "sequence": 15,
+          "sequence": 16,
           "job_id": "9268",
           "name": "shri balaji provision store",
           "area_id": "5082",
@@ -3348,7 +3339,16 @@
           "weight": 206.0
         },
         {
-          "sequence": 16,
+          "sequence": 17,
+          "job_id": "10788",
+          "name": "SOUBHAGYA STORE",
+          "area_id": "5082",
+          "lat": 12.9041912,
+          "lon": 77.5786627,
+          "weight": 150.0
+        },
+        {
+          "sequence": 18,
           "job_id": "10800",
           "name": "maasti fresh",
           "area_id": "5082",
@@ -3357,16 +3357,7 @@
           "weight": 130.0
         },
         {
-          "sequence": 17,
-          "job_id": "9355",
-          "name": "swagath departmental store",
-          "area_id": "5082",
-          "lat": 12.9200766,
-          "lon": 77.5707412,
-          "weight": 264.0
-        },
-        {
-          "sequence": 18,
+          "sequence": 19,
           "job_id": "8656",
           "name": "Annapurneshwari Traders",
           "area_id": "5082",
@@ -3375,7 +3366,7 @@
           "weight": 174.0
         },
         {
-          "sequence": 19,
+          "sequence": 20,
           "job_id": "8964",
           "name": "M S SHAKTI RICE TRADERS",
           "area_id": "5082",
@@ -3384,7 +3375,7 @@
           "weight": 78.0
         },
         {
-          "sequence": 20,
+          "sequence": 21,
           "job_id": "7719",
           "name": "Sri Lakshmi Stores",
           "area_id": "5082",
@@ -3396,21 +3387,30 @@
     },
     {
       "vehicle_id": 25,
-      "distance_km": 22.81,
-      "load_kg": 2643.8,
-      "stop_count": 11,
+      "distance_km": 22.6,
+      "load_kg": 2992.4,
+      "stop_count": 12,
       "stops": [
         {
           "sequence": 1,
-          "job_id": "7570",
-          "name": "SRI CHOWDESHWARI RICE TRADERS",
-          "area_id": "5084",
-          "lat": 13.0576353,
-          "lon": 77.5894742,
-          "weight": 104.0
+          "job_id": "8203",
+          "name": "BYRAVESHWARA RICE TRADERS",
+          "area_id": "5076",
+          "lat": 13.0574164,
+          "lon": 77.5985046,
+          "weight": 363.0
         },
         {
           "sequence": 2,
+          "job_id": "8260",
+          "name": "SRI CHOWDESHWARI PROVISION STORE",
+          "area_id": "5076",
+          "lat": 13.0583405,
+          "lon": 77.6031705,
+          "weight": 89.6
+        },
+        {
+          "sequence": 3,
           "job_id": "8307",
           "name": "SLV RICE CORNER",
           "area_id": "5141",
@@ -3419,7 +3419,7 @@
           "weight": 453.6
         },
         {
-          "sequence": 3,
+          "sequence": 4,
           "job_id": "8806",
           "name": "SRI VENKATESHWARA PROVISION STORE",
           "area_id": "5141",
@@ -3428,7 +3428,7 @@
           "weight": 212.0
         },
         {
-          "sequence": 4,
+          "sequence": 5,
           "job_id": "8812",
           "name": "SLN PROVISION STORE",
           "area_id": "5141",
@@ -3437,7 +3437,7 @@
           "weight": 130.0
         },
         {
-          "sequence": 5,
+          "sequence": 6,
           "job_id": "10002",
           "name": "TAWAKAL RICE TRADERS",
           "area_id": "5141",
@@ -3446,7 +3446,7 @@
           "weight": 888.0
         },
         {
-          "sequence": 6,
+          "sequence": 7,
           "job_id": "10383",
           "name": "D  ROEL CORNER  SUPERMARKET",
           "area_id": "5141",
@@ -3455,7 +3455,7 @@
           "weight": 161.2
         },
         {
-          "sequence": 7,
+          "sequence": 8,
           "job_id": "9562",
           "name": "Vaishnav provision store",
           "area_id": "5141",
@@ -3464,7 +3464,7 @@
           "weight": 320.0
         },
         {
-          "sequence": 8,
+          "sequence": 9,
           "job_id": "9714",
           "name": "Mubarak stores",
           "area_id": "5141",
@@ -3473,7 +3473,7 @@
           "weight": 70.0
         },
         {
-          "sequence": 9,
+          "sequence": 10,
           "job_id": "10525",
           "name": "Sri Lakshmi Ganapathi store",
           "area_id": "5141",
@@ -3482,7 +3482,7 @@
           "weight": 60.0
         },
         {
-          "sequence": 10,
+          "sequence": 11,
           "job_id": "10500",
           "name": "Vento Coliving",
           "area_id": "5141",
@@ -3491,7 +3491,7 @@
           "weight": 115.0
         },
         {
-          "sequence": 11,
+          "sequence": 12,
           "job_id": "10335",
           "name": "janatha store",
           "area_id": "5141",

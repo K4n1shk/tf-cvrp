@@ -1,10 +1,51 @@
 from __future__ import annotations
 
+from dataclasses import replace
 import math
 from typing import Dict, Iterable, List, Sequence
 
 from models import AreaSummary, Coordinate, Job, Vehicle
 from tfopt.geo import haversine_km
+
+
+def redistribute_area_ids(jobs: Sequence[Job], area_ids: Sequence[str]) -> List[Job]:
+    """
+    Reassign problematic area ids to the nearest existing non-problematic area.
+
+    This keeps source CSVs unchanged while preventing tiny or overlapping area codes
+    from becoming their own territory in the optimization model.
+    """
+    area_ids_to_replace = {str(area_id).strip() for area_id in area_ids if str(area_id).strip()}
+    if not area_ids_to_replace:
+        return list(jobs)
+
+    donor_jobs = [
+        job
+        for job in jobs
+        if job.area_id and job.area_id not in area_ids_to_replace
+    ]
+    if not donor_jobs:
+        return list(jobs)
+
+    normalized_jobs: List[Job] = []
+    for job in jobs:
+        if job.area_id not in area_ids_to_replace:
+            normalized_jobs.append(job)
+            continue
+
+        nearest_job = min(
+            donor_jobs,
+            key=lambda donor: haversine_km(job.location, donor.location),
+        )
+        normalized_jobs.append(
+            replace(
+                job,
+                area_id=nearest_job.area_id,
+                has_area_id=True,
+            )
+        )
+
+    return normalized_jobs
 
 
 def assign_missing_area_ids(jobs: Sequence[Job]) -> List[Job]:

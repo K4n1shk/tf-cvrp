@@ -387,10 +387,18 @@ def render_leaflet_routes_html(
   <title>Routes Map</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <style>
-    body {{ margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f8fafc; color: #0f172a; }}
-    .layout {{ display: grid; grid-template-columns: minmax(0, 1fr) 390px; height: 100vh; }}
-    #map {{ height: 100vh; width: 100%; }}
-    .panel {{ overflow: auto; background: #f8fafc; border-left: 1px solid #d0d7de; padding: 16px; }}
+    * {{ box-sizing: border-box; }}
+    body {{ --sidebar-width: 390px; margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f8fafc; color: #0f172a; }}
+    .layout {{ display: grid; grid-template-columns: minmax(0, 1fr) 6px minmax(300px, var(--sidebar-width)); height: 100vh; transition: grid-template-columns 180ms ease; }}
+    .layout.sidebar-collapsed {{ grid-template-columns: minmax(0, 1fr) 0 0; }}
+    #map {{ height: 100vh; width: 100%; min-width: 0; }}
+    .sidebar-resizer {{ cursor: col-resize; background: #e2e8f0; border-left: 1px solid #cbd5e1; border-right: 1px solid #cbd5e1; transition: background 120ms ease; z-index: 900; }}
+    .sidebar-resizer:hover, body.resizing-sidebar .sidebar-resizer {{ background: #94a3b8; }}
+    .layout.sidebar-collapsed .sidebar-resizer {{ border: 0; overflow: hidden; }}
+    .panel {{ min-width: 0; overflow: auto; background: #f8fafc; border-left: 1px solid #d0d7de; padding: 16px; transition: padding 180ms ease, border-color 180ms ease; }}
+    .layout.sidebar-collapsed .panel {{ border-left: 0; overflow: hidden; padding-left: 0; padding-right: 0; visibility: hidden; }}
+    .sidebar-toggle {{ position: fixed; top: 12px; left: 56px; z-index: 2000; border: 1px solid #cbd5e1; border-radius: 8px; background: #fff; color: #0f172a; cursor: pointer; font-size: 13px; font-weight: 800; line-height: 1; padding: 10px 12px; box-shadow: 0 4px 14px rgba(15, 23, 42, 0.16); }}
+    .sidebar-toggle:hover {{ background: #f8fafc; }}
     .panel h2, .panel h3 {{ margin-top: 0; }}
     .panel h2 {{ font-size: 18px; line-height: 1.2; margin-bottom: 14px; letter-spacing: 0; }}
     .section-title {{ display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 0 0 10px; font-size: 13px; font-weight: 800; color: #0f172a; text-transform: uppercase; letter-spacing: 0.04em; }}
@@ -401,7 +409,7 @@ def render_leaflet_routes_html(
     .map-label {{ background: rgba(255,255,255,0.92); border: 1px solid #cbd5e1; color: #111827; padding: 1px 4px; border-radius: 4px; font-size: 11px; white-space: nowrap; }}
     .control {{ width: 100%; padding: 8px; font-size: 14px; margin-bottom: 12px; }}
     .card {{ border: 1px solid #d7dee8; border-radius: 8px; padding: 12px; margin-bottom: 12px; background: #ffffff; box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05); }}
-    .grid2 {{ display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }}
+    .grid2 {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px; }}
     .small {{ font-size: 12px; color: #4b5563; }}
     .summary-hero {{ border: 1px solid #d7dee8; border-radius: 8px; background: #ffffff; padding: 12px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05); }}
     .summary-hero-top {{ display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; margin-bottom: 10px; }}
@@ -409,21 +417,21 @@ def render_leaflet_routes_html(
     .summary-headline {{ font-size: 22px; font-weight: 800; line-height: 1.05; color: #0f172a; margin-top: 3px; }}
     .summary-subline {{ font-size: 12px; color: #475569; margin-top: 4px; }}
     .summary-pill {{ display: inline-flex; align-items: center; min-height: 24px; padding: 0 8px; border-radius: 999px; border: 1px solid #bbf7d0; background: #f0fdf4; color: #166534; font-size: 11px; font-weight: 800; white-space: nowrap; }}
-    .summary-stat-grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; }}
+    .summary-stat-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 8px; margin-top: 10px; }}
     .summary-stat {{ border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; padding: 9px; min-width: 0; }}
     .summary-stat-label {{ font-size: 11px; color: #64748b; margin-bottom: 4px; }}
     .summary-stat-value {{ font-size: 16px; font-weight: 800; color: #0f172a; line-height: 1.1; overflow-wrap: anywhere; }}
     .summary-stat-sub {{ font-size: 11px; color: #64748b; margin-top: 3px; }}
     .summary-progress {{ margin-top: 10px; }}
-    .summary-band {{ display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px; }}
+    .summary-band {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 8px; margin-bottom: 12px; }}
     .global-list {{ display: grid; gap: 8px; }}
     .global-row {{ display: flex; align-items: center; justify-content: space-between; gap: 12px; border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; padding: 9px; font-size: 12px; }}
     .global-row span:first-child {{ color: #64748b; }}
     .global-row strong {{ color: #0f172a; font-size: 13px; text-align: right; overflow-wrap: anywhere; }}
-    .legend-grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 6px 10px; }}
+    .legend-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 6px 10px; }}
     .legend-grid .legend-item {{ margin-bottom: 0; min-width: 0; }}
     .legend-grid .legend-item span:last-child {{ overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }}
-    .util-summary-grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }}
+    .util-summary-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px; }}
     .util-chip {{ border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; padding: 9px; min-width: 0; }}
     .util-chip-label {{ display: flex; align-items: center; gap: 6px; font-size: 11px; color: #64748b; margin-bottom: 4px; }}
     .util-chip-value {{ font-size: 18px; font-weight: 800; color: #0f172a; line-height: 1; }}
@@ -443,7 +451,7 @@ def render_leaflet_routes_html(
     .status-badge.stop_bound {{ background: #f3e8ff; color: #7e22ce; }}
     .status-badge.underutilized {{ background: #ffedd5; color: #c2410c; }}
     .status-badge.unused {{ background: #f1f5f9; color: #475569; }}
-    .diag-meta {{ display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 7px; font-size: 11px; color: #64748b; }}
+    .diag-meta {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 6px; margin-top: 7px; font-size: 11px; color: #64748b; }}
     .debug-list {{ display: grid; gap: 10px; max-height: 360px; overflow: auto; padding-right: 2px; }}
     .debug-group {{ border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; padding: 9px; }}
     .debug-group-head {{ display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 8px; }}
@@ -462,7 +470,7 @@ def render_leaflet_routes_html(
     .vehicle-summary-head {{ display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 8px; }}
     .vehicle-summary-title {{ display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; color: #0f172a; }}
     .vehicle-summary-meta {{ font-size: 11px; color: #475569; text-align: right; }}
-    .vehicle-summary-metrics {{ display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 8px; }}
+    .vehicle-summary-metrics {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px; margin-bottom: 8px; }}
     .vehicle-metric {{ border: 1px solid #e2e8f0; border-radius: 8px; background: rgba(255,255,255,0.9); padding: 8px; }}
     .vehicle-metric-label {{ font-size: 11px; color: #64748b; margin-bottom: 3px; }}
     .vehicle-metric-value {{ font-size: 14px; font-weight: 700; color: #0f172a; }}
@@ -480,12 +488,24 @@ def render_leaflet_routes_html(
     .route-filter-item.select-all {{ padding-bottom: 8px; margin-bottom: 8px; border-bottom: 1px solid #e5e7eb; font-weight: 700; }}
     .route-swatch {{ width: 12px; height: 12px; border-radius: 3px; display: inline-block; border: 1px solid #cbd5e1; }}
     .leaflet-tile-pane {{ filter: grayscale(100%) contrast(115%) brightness(88%); }}
+    @media (max-width: 900px) {{
+      .layout {{ grid-template-columns: minmax(0, 1fr); grid-template-rows: 65vh auto; height: auto; min-height: 100vh; }}
+      .layout.sidebar-collapsed {{ grid-template-columns: minmax(0, 1fr); grid-template-rows: 100vh 0 0; }}
+      #map {{ height: 65vh; }}
+      .layout.sidebar-collapsed #map {{ height: 100vh; }}
+      .sidebar-resizer {{ display: none; }}
+      .panel {{ border-left: 0; border-top: 1px solid #d0d7de; }}
+      .layout.sidebar-collapsed .panel {{ border-top: 0; height: 0; padding-top: 0; padding-bottom: 0; }}
+      .sidebar-toggle {{ left: 56px; top: 10px; }}
+    }}
   </style>
 </head>
 <body>
-  <div class="layout">
+  <button id="sidebar-toggle" class="sidebar-toggle" type="button" aria-controls="sidebar-panel" aria-expanded="true">Hide panel</button>
+  <div class="layout" id="app-layout">
     <div id="map"></div>
-    <div class="panel">
+    <div class="sidebar-resizer" id="sidebar-resizer" role="separator" aria-label="Resize sidebar" aria-controls="sidebar-panel" aria-orientation="vertical" tabindex="0"></div>
+    <div class="panel" id="sidebar-panel">
       <h2>Routes And Area Overlap</h2>
       <div class="summary-hero">
         <div class="summary-hero-top">
@@ -612,9 +632,56 @@ def render_leaflet_routes_html(
     const utilizationSummaryEl = document.getElementById('utilization-summary');
     const vehicleDiagnosticsEl = document.getElementById('vehicle-diagnostics');
     const underutilizedDebugEl = document.getElementById('underutilized-debug');
+    const layoutEl = document.getElementById('app-layout');
+    const sidebarToggle = document.getElementById('sidebar-toggle');
+    const sidebarResizer = document.getElementById('sidebar-resizer');
     const routeLayers = new Map();
     const routeStopLayers = new Map();
     const routeLabelLayers = new Map();
+
+    function invalidateMapSizeSoon() {{
+      window.requestAnimationFrame(() => {{
+        window.setTimeout(() => map.invalidateSize(), 220);
+      }});
+    }}
+
+    sidebarToggle.addEventListener('click', () => {{
+      const collapsed = layoutEl.classList.toggle('sidebar-collapsed');
+      sidebarToggle.setAttribute('aria-expanded', String(!collapsed));
+      sidebarToggle.textContent = collapsed ? 'Show panel' : 'Hide panel';
+      invalidateMapSizeSoon();
+    }});
+
+    window.addEventListener('resize', () => map.invalidateSize());
+
+    function setSidebarWidth(width) {{
+      const maxWidth = Math.min(760, Math.max(300, window.innerWidth - 320));
+      const nextWidth = Math.min(Math.max(width, 300), maxWidth);
+      document.body.style.setProperty('--sidebar-width', `${{nextWidth}}px`);
+      map.invalidateSize();
+    }}
+
+    sidebarResizer.addEventListener('pointerdown', (event) => {{
+      if (window.matchMedia('(max-width: 900px)').matches || layoutEl.classList.contains('sidebar-collapsed')) return;
+      event.preventDefault();
+      sidebarResizer.setPointerCapture(event.pointerId);
+      document.body.classList.add('resizing-sidebar');
+    }});
+
+    sidebarResizer.addEventListener('pointermove', (event) => {{
+      if (!document.body.classList.contains('resizing-sidebar')) return;
+      setSidebarWidth(window.innerWidth - event.clientX);
+    }});
+
+    function stopSidebarResize(event) {{
+      if (!document.body.classList.contains('resizing-sidebar')) return;
+      document.body.classList.remove('resizing-sidebar');
+      if (sidebarResizer.hasPointerCapture(event.pointerId)) sidebarResizer.releasePointerCapture(event.pointerId);
+      invalidateMapSizeSoon();
+    }}
+
+    sidebarResizer.addEventListener('pointerup', stopSidebarResize);
+    sidebarResizer.addEventListener('pointercancel', stopSidebarResize);
 
     areaOverlays.forEach((area) => {{
       const polygonLatLngs = area.polygon.map((point) => [point.lat, point.lon]);
